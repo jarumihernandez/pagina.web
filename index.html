@@ -1,0 +1,2523 @@
+
+<!doctype html>
+<html lang="es-MX">
+    <head >
+                <script>
+    var require = {
+        "baseUrl": "https://www.colchasconcord.com.mx/static/version1643241833/frontend/qbo/theme/es_MX"
+    };
+</script>
+        <meta charset="utf-8"/>
+<meta name="description" content="Tienda en línea de colchas concord donde podrás encontrar los mejores blancos del hogar como: sábanas, edredones, colchas y mucho más. "/>
+<meta name="keywords" content="Magento, Varien, E-commerce"/>
+<meta name="robots" content="INDEX,FOLLOW"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+<title>Concord</title>
+<link  rel="stylesheet" type="text/css"  media="all" href="https://www.colchasconcord.com.mx/static/version1643241833/_cache/merged/ce6ff041d265cdfa5d1bb4b087f6811e.min.css" />
+<link  rel="stylesheet" type="text/css"  media="screen and (min-width: 768px)" href="https://www.colchasconcord.com.mx/static/version1643241833/frontend/qbo/theme/es_MX/css/styles-l.min.css" />
+<link  rel="stylesheet" type="text/css"  media="print" href="https://www.colchasconcord.com.mx/static/version1643241833/frontend/qbo/theme/es_MX/css/print.min.css" />
+<link  rel="stylesheet" type="text/css"  media="all" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+<script  type="text/javascript"  src="https://www.colchasconcord.com.mx/static/version1643241833/_cache/merged/112e3f3d922d0abd37872d3cd197a4d4.min.js"></script>
+<script  type="text/javascript"  defer="defer" async="async" src="//www.googletagmanager.com/gtag/js?id=AW-747380284"></script>
+<script  type="text/javascript"  defer="defer" async="async" src="https://www.google.com/recaptcha/api.js"></script>
+<script  type="text/javascript"  async="async" src="https://www.colchasconcord.com.mx/static/version1643241833/frontend/qbo/theme/es_MX/Qbo_GoogleTag/js/global/code.min.js"></script>
+<link  rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Shadows+Into+Light" />
+<link  rel="icon" type="image/x-icon" href="https://www.colchasconcord.com.mx/media/favicon/stores/1/Favicon_Concord-1_1_.png" />
+<link  rel="shortcut icon" type="image/x-icon" href="https://www.colchasconcord.com.mx/media/favicon/stores/1/Favicon_Concord-1_1_.png" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MNZC6FQ');</script>
+<!-- End Google Tag Manager -->
+
+<meta name="facebook-domain-verification" content="63bume2pdhr78bu4z8qy0pxolhd2wc" />
+
+<meta name = 'Petal-Search-site-verify' content = '5135507fee' />
+
+<meta name="google-site-verification" content="xjyRp3Dj8m7UNyhwKEhHUe8LInKdqMcQ8IgMXzWiLcQ" />
+
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic&amp;v1&amp;subset=latin%2Clatin-ext" type="text/css" media="screen"/>
+<link rel="stylesheet" type="text/css" media="all" href="https://www.colchasconcord.com.mx/media/porto/configed_css/design_default.css">
+<link rel="stylesheet" type="text/css" media="all" href="https://www.colchasconcord.com.mx/media/porto/configed_css/settings_default.css">
+<script type="text/javascript">
+require([
+    'jquery'
+], function ($) {
+    $("body").addClass("layout-1170");
+    $("body").addClass("wide");
+    $(document).ready(function(){
+        $(".drop-menu > a").off("click").on("click", function(){
+            if($(this).parent().children(".nav-sections").hasClass("visible"))
+                $(this).parent().children(".nav-sections").removeClass("visible");
+            else
+                $(this).parent().children(".nav-sections").addClass("visible")
+        });
+    });
+    var scrolled = false;
+    $(window).scroll(function(){
+        if(!$('.page-header').hasClass('type10')) {
+            if($(window).width()>=768){
+                if(140<$(window).scrollTop() && !scrolled){
+                    $('.page-header').addClass("sticky-header");
+                    scrolled = true;
+                    if(!$(".page-header").hasClass("type12")) {
+                        $('.page-header .minicart-wrapper').after('<div class="minicart-place hide"></div>');
+                        var minicart = $('.page-header .minicart-wrapper').detach();
+                        if($(".page-header").hasClass("type8"))
+                            $('.page-header .menu-wrapper').append(minicart);
+                        else
+                            $('.page-header .navigation').append(minicart);
+                                            } else {
+                                            }
+                                    }
+                if(140>=$(window).scrollTop() && scrolled){
+                    $('.page-header').removeClass("sticky-header");
+                    scrolled = false;
+                    if(!$(".page-header").hasClass("type12")) {
+                        var minicart;
+                        if($(".page-header").hasClass("type8"))
+                            minicart = $('.page-header .menu-wrapper .minicart-wrapper').detach();
+                        else
+                            minicart = $('.page-header .navigation .minicart-wrapper').detach();
+                        $('.minicart-place').after(minicart);
+                        $('.minicart-place').remove();
+                        $('.page-header .minicart-wrapper-moved').addClass("minicart-wrapper").removeClass("minicart-wrapper-moved").removeClass("hide");
+                    }
+                                    }
+            }
+        }
+    });
+});
+</script>
+<style>
+    #social-login-popup .social-login-title {
+        background-color: #3399cc    }
+
+    #social-login-popup .social-login #bnt-social-login-authentication,
+    #social-login-popup .forgot .primary button,
+    #social-login-popup .create .primary button {
+        background-color: #3399cc;
+        border: #3399cc    }
+
+    .block.social-login-authentication-channel.account-social-login .block-content {
+        text-align: center;
+    }
+
+    
+    /* Compatible ETheme_YOURstore*/
+    div#centerColumn .column.main .block.social-login-authentication-channel.account-social-login {
+        max-width: 900px !important;
+        margin: 0 auto !important;
+    }
+
+    div#centerColumn .column.main .block.social-login-authentication-channel.account-social-login .block-content {
+        text-align: center;
+    }
+
+    @media (max-width: 1024px) {
+        div#centerColumn .column.main .block.social-login-authentication-channel.account-social-login .block-content {
+            padding: 0 15px;
+        }
+    }
+</style>
+
+<link rel="stylesheet" type="text/css" media="all"
+      href="//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"/>    </head>
+    <body data-container="body" data-mage-init='{"loaderAjax": {}, "loader": { "icon": "https://www.colchasconcord.com.mx/static/version1643241833/frontend/qbo/theme/es_MX/images/loader-2.gif"}}' class="cms-porto-home-2 cms-index-index page-layout-1column">
+            <script>
+        require.config({
+            deps: [
+                'jquery',
+                'mage/translate',
+                'jquery/jquery-storageapi'
+            ],
+            callback: function ($) {
+                'use strict';
+
+                var dependencies = [],
+                    versionObj;
+
+                $.initNamespaceStorage('mage-translation-storage');
+                $.initNamespaceStorage('mage-translation-file-version');
+                versionObj = $.localStorage.get('mage-translation-file-version');
+
+                if (versionObj.version !== 'fef6c035c3ad22012772ef1999544203069fbb45') {
+                    dependencies.push(
+                        'text!js-translation.json'
+                    );
+
+                }
+
+                require.config({
+                    deps: dependencies,
+                    callback: function (string) {
+                        if (typeof string === 'string') {
+                            $.mage.translate.add(JSON.parse(string));
+                            $.localStorage.set('mage-translation-storage', string);
+                            $.localStorage.set(
+                                'mage-translation-file-version',
+                                {
+                                    version: 'fef6c035c3ad22012772ef1999544203069fbb45'
+                                }
+                            );
+                        } else {
+                            $.mage.translate.add($.localStorage.get('mage-translation-storage'));
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "mage/cookies": {
+                "expires": null,
+                "path": "/",
+                "domain": ".www.colchasconcord.com.mx",
+                "secure": false,
+                "lifetime": "86000"
+            }
+        }
+    }
+</script>
+    <noscript>
+        <div class="message global noscript">
+            <div class="content">
+                <p>
+                    <strong>Parece que JavaScript está deshabilitado en su navegador.</strong>
+                    <span>For the best experience on our site, be sure to turn on Javascript in your browser.</span>
+                </p>
+            </div>
+        </div>
+    </noscript>
+<!-- BEGIN GOOGLE ANALYTICS CODE -->
+<script>
+//<![CDATA[
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    
+ga('create', 'UA-100947043-1', 'auto');
+ga('send', 'pageview');
+    
+//]]>
+</script>
+<!-- END GOOGLE ANALYTICS CODE -->
+<div style="display: none;" id="paypal-express-in-context-checkout-main"></div>
+<script type="text/x-magento-init">
+    {"*":{"Magento_Paypal\/js\/in-context\/express-checkout":{"id":"paypal-express-in-context-checkout-main","path":"https:\/\/www.colchasconcord.com.mx\/paypal\/express\/gettoken\/","merchantId":"62CRQC8SGPB66","button":true,"clientConfig":{"locale":"es_MX","environment":"production","button":["paypal-express-in-context-checkout-main"]}}}}</script>
+
+    <div data-bind="scope: 'autocomplete'">
+        <!-- ko template: getTemplate() --><!-- /ko -->
+    </div>
+
+    <script type="text/x-magento-init">
+    {"*":{"Magento_Ui\/js\/core\/app":{"components":{"autocompleteInjection":{"component":"Mirasvit_SearchAutocomplete\/js\/injection","config":[]},"autocomplete":{"component":"Mirasvit_SearchAutocomplete\/js\/autocomplete","provider":"autocompleteProvider","config":{"query":"","priceFormat":{"pattern":"$%s","precision":2,"requiredPrecision":2,"decimalSymbol":".","groupSymbol":",","groupLength":3,"integerRequired":1},"minSearchLength":3}},"autocompleteProvider":{"component":"Mirasvit_SearchAutocomplete\/js\/provider","config":{"url":"https:\/\/www.colchasconcord.com.mx\/searchautocomplete\/ajax\/suggest\/","delay":300,"minSearchLength":3}},"autocompleteNavigation":{"component":"Mirasvit_SearchAutocomplete\/js\/navigation","autocomplete":"autocomplete"},"autocompletePopular":{"component":"Mirasvit_SearchAutocomplete\/js\/popular","autocomplete":"autocomplete","provider":"autocompleteProvider","config":{"enabled":"1","queries":["Edredon","Cortinas","Cobertor","Sabanas","Cortinas para rec\u00e1mara"],"minSearchLength":3}}}}}}
+    </script>
+
+<div class="page-wrapper"><header class="page-header type2">
+    <div class="panel wrapper">
+        <div class="panel header">
+            <a class="action skip contentarea" href="#contentarea"><span>Ir al contenido</span></a>
+                        
+            <ul class="header links">        <li class="greet welcome" data-bind="scope: 'customer'">
+            <!-- ko if: customer().fullname  -->
+            <span data-bind="text: new String('¡ Bienvenido %1!').replace('%1', customer().firstname)">
+            </span>
+            <!-- /ko -->
+            <!-- ko ifnot: customer().fullname  -->
+            <span data-bind="html:'Bienvenido a Colchas Concord'"></span>
+            <!-- /ko -->
+        </li>
+        <script type="text/x-magento-init">
+        {
+            "*": {
+                "Magento_Ui/js/core/app": {
+                    "components": {
+                        "customer": {
+                            "component": "Magento_Customer/js/view/customer"
+                        }
+                    }
+                }
+            }
+        }
+        </script>
+    
+<script>
+    require([
+        'Magento_Customer/js/customer-data'
+    ], function(customerData) {
+        var sections = ['cart'];
+        customerData.invalidate(sections);
+        customerData.reload(sections, true);
+    });
+</script>
+<li class="item link compare" data-bind="scope: 'compareProducts'" data-role="compare-products-link">
+    <a class="action compare no-display" title="Comparar"
+       data-bind="attr: {'href': compareProducts().listUrl}, css: {'no-display': !compareProducts().count}"
+    >
+        Comparar        (<span class="counter qty" data-bind="text: compareProducts().countCaption"></span>)
+    </a>
+</li>
+<script type="text/x-magento-init">
+{"[data-role=compare-products-link]": {"Magento_Ui/js/core/app": {"components":{"compareProducts":{"component":"Magento_Catalog\/js\/view\/compare-products"}}}}}
+</script>
+<li class="authorization-link" data-label="o">
+    <a href="https://www.colchasconcord.com.mx/customer/account/login/">
+      INICIAR SESIÓN / ACTIVA TU CUENTA    </a>
+</li>
+<li><a href="https://www.colchasconcord.com.mx/ayuda/" class="help-link" >Ayuda</a></li><li><a href="https://www.colchasconcord.com.mx/contact/" class="contact-link" >Contacto</a></li><li><a href="https://www.colchasconcord.com.mx/storelocator/" class="location-link" >Sucursales</a></li><li><a href="http://tiendas.colchasconcord.mx/sistConcord/index.aspx" class="wholesalers-link-concord" target="_blank" >Mayoristas</a></li><li><a href="https://www.tissini.com/catalogos/#formuregistro" class="usa-store" target="_blank" >VENTAS USA: </a></li><!-- BLOCK afiliate-link -->
+<!-- /BLOCK afiliate-link --><!-- BLOCK price-link --><li class="wholesflers-link-li linked prices-selector-link hideLinkActivate" data-label="" data-bind="scope: 'groupDropdown'" data-role="group-dropdown">
+<!-- ko if: groupDropdown().ismoduleenable && groupDropdown().isloggedin && groupDropdown().customersesiongroup -->
+    <!--Get Url To Send Ajax-->
+        <!--Get Customer Group Id From Session-->
+    	<form method="POST" class="group-form" id="group-selector" data-url="https://www.colchasconcord.com.mx/priceselector/customer/group/" data-sesion-group ="0">
+        <select id="group_dropdown"  class="group-selector concord-prices-selector-dropdown" name="group_dropdown" >
+            <!-- ko foreach: groupDropdown().grouplist -->
+            	<!-- ko if: groupId == 0-->
+            		<option data-bind="value: groupId, text: groupCode" selected></option>
+            	<!-- /ko -->
+            	<!-- ko ifnot: groupId == 0 -->
+            		<option data-bind="value: groupId, text: groupCode"></option>
+            	<!-- /ko -->
+            <!-- /ko -->
+        </select>
+    </form>
+    <div style="display: inline-block" data-mage-init='{"pricesSelector":{}}' ></div>
+<!-- /ko -->
+</li>
+<script type="text/x-magento-init">
+     { 
+        "[data-role=group-dropdown]": {"Magento_Ui/js/core/app": {"components":{"groupDropdown":{"component":"Qbo_PricesSelector\/js\/view\/groupdropdown"}}}}
+     }
+</script><!-- /BLOCK price-link --></ul>            <div class="default">
+	<ul class="header social"><li class="social-links">
+    <a href="https://www.facebook.com/ColchasConcordOficial/" class="facebook" target="_black">
+            </a>
+</li>
+		<li class="social-links">
+    <a href="https://www.instagram.com/colchasconcordoficialmx/" class="instagram" target="_black">
+            </a>
+</li>
+		<li class="social-links">
+    <a href="https://twitter.com/OficialConcord" class="twitter" target="_black">
+            </a>
+</li>
+		<li class="social-links">
+    <a href="https://es.pinterest.com/colchasconcord/" class="pinterest" target="_black">
+            </a>
+</li>
+		</ul></div>
+	        </div>
+    </div>
+    <div class="header content">
+    <span data-action="toggle-nav" class="action nav-toggle"><span>Toggle Nav</span></span>
+    <strong class="logo">
+        <img src="https://www.colchasconcord.com.mx/media/logo/stores/1/logo-concord_2__3_2_.png"
+             alt="Colchas Concord"
+             width="250"             height="100"        />
+    </strong>
+    
+
+<a class="phone-block" href="tel:+525558707011"><img class="face-contact" src="https://www.colchasconcord.com.mx/media/wysiwyg/qbo/i11_1.png" alt=""></a><div data-block="minicart" class="minicart-wrapper">
+     <div class="custom-block"><div class="concord-phones"><span class="number_contact area">Área Metropolitana  e Interior de la república</span><a href="tel: 5558707011" class="link-phone
+"><span class="number_contact">55-58-70-70-11</span></a>
+</div>
+<span class="split"></span>
+
+</div>    <a class="action showcart" href="https://www.colchasconcord.com.mx/checkout/cart/"
+       data-bind="scope: 'minicart_content'">
+        <span class="text">Mi carrito</span>
+        <span class="counter qty empty"
+              data-bind="css: { empty: !!getCartParam('summary_count') == false }, blockLoader: isLoading">
+            <span class="counter-number">
+            <!-- ko if: getCartParam('summary_count') --><!-- ko text: getCartParam('summary_count') --><!-- /ko --><!-- /ko -->
+            <!-- ko ifnot: getCartParam('summary_count') -->0<!-- /ko -->
+            </span>
+            <span class="counter-label">
+                <!-- ko i18n: 'items' --><!-- /ko -->
+            </span>
+        </span>
+    </a>
+            <div class="block block-minicart empty"
+             data-role="dropdownDialog"
+             data-mage-init='{"dropdownDialog":{
+                "appendTo":"[data-block=minicart]",
+                "triggerTarget":".showcart",
+                "timeout": "2000",
+                "closeOnMouseLeave": false,
+                "closeOnEscape": true,
+                "triggerClass":"active",
+                "parentClass":"active",
+                "buttons":[]}}'>
+            <div id="minicart-content-wrapper" data-bind="scope: 'minicart_content'">
+                <!-- ko template: getTemplate() --><!-- /ko -->
+            </div>
+        </div>
+        <script>
+        window.checkout = {"shoppingCartUrl":"https:\/\/www.colchasconcord.com.mx\/checkout\/cart\/","checkoutUrl":"https:\/\/www.colchasconcord.com.mx\/checkout\/","updateItemQtyUrl":"https:\/\/www.colchasconcord.com.mx\/checkout\/sidebar\/updateItemQty\/","removeItemUrl":"https:\/\/www.colchasconcord.com.mx\/checkout\/sidebar\/removeItem\/","imageTemplate":"Magento_Catalog\/product\/image","baseUrl":"https:\/\/www.colchasconcord.com.mx\/","minicartMaxItemsVisible":5,"websiteId":"1","customerLoginUrl":"https:\/\/www.colchasconcord.com.mx\/customer\/account\/login\/","isRedirectRequired":false,"autocomplete":"off","captcha":{"user_login":{"isCaseSensitive":false,"imageHeight":50,"imageSrc":"","refreshUrl":"https:\/\/www.colchasconcord.com.mx\/captcha\/refresh\/","isRequired":false},"guest_checkout":{"isCaseSensitive":false,"imageHeight":50,"imageSrc":"","refreshUrl":"https:\/\/www.colchasconcord.com.mx\/captcha\/refresh\/","isRequired":false}}};
+    </script>
+    <script type="text/x-magento-init">
+    {
+        "[data-block='minicart']": {
+            "Magento_Ui/js/core/app": {"components":{"minicart_content":{"children":{"subtotal.container":{"children":{"subtotal":{"children":{"subtotal.totals":{"config":{"display_cart_subtotal_incl_tax":0,"display_cart_subtotal_excl_tax":1,"template":"Magento_Tax\/checkout\/minicart\/subtotal\/totals"},"children":{"subtotal.totals.msrp":{"component":"Magento_Msrp\/js\/view\/checkout\/minicart\/subtotal\/totals","config":{"displayArea":"minicart-subtotal-hidden","template":"Magento_Msrp\/checkout\/minicart\/subtotal\/totals"}}},"component":"Magento_Tax\/js\/view\/checkout\/minicart\/subtotal\/totals"}},"component":"uiComponent","config":{"template":"Magento_Checkout\/minicart\/subtotal"}}},"component":"uiComponent","config":{"displayArea":"subtotalContainer"}},"item.renderer":{"component":"uiComponent","config":{"displayArea":"defaultRenderer","template":"Magento_Checkout\/minicart\/item\/default"},"children":{"item.image":{"component":"Magento_Catalog\/js\/view\/image","config":{"template":"Magento_Catalog\/product\/image","displayArea":"itemImage"}},"checkout.cart.item.price.sidebar":{"component":"uiComponent","config":{"template":"Magento_Checkout\/minicart\/item\/price","displayArea":"priceSidebar"}}}},"extra_info":{"component":"uiComponent","config":{"displayArea":"extraInfo"}},"promotion":{"component":"uiComponent","config":{"displayArea":"promotion"}}},"config":{"itemRenderer":{"default":"defaultRenderer","simple":"defaultRenderer","virtual":"defaultRenderer"},"template":"Magento_Checkout\/minicart\/content"},"component":"Magento_Checkout\/js\/view\/minicart"}},"types":[]}        },
+        "*": {
+            "Magento_Ui/js/block-loader": "https://www.colchasconcord.com.mx/static/version1643241833/frontend/qbo/theme/es_MX/images/loader-1.gif"
+        }
+    }
+    </script>
+</div>
+
+
+    <div class="block block-search">
+    <div class="block block-title"><strong>Búsqueda</strong></div>
+    <div class="block block-content">
+        <form class="form minisearch" id="search_mini_form" action="https://www.colchasconcord.com.mx/catalogsearch/result/" method="get">
+            <div class="field search">
+                <label class="label" for="search" data-role="minisearch-label">
+                    <span>Búsqueda</span>
+                </label>
+                <div class="control">
+                    <input id="search"
+                           data-mage-init='{"quickSearch":{
+                                "formSelector":"#search_mini_form",
+                                "url":"https://www.colchasconcord.com.mx/search/ajax/suggest/",
+                                "destinationSelector":"#search_autocomplete"}
+                           }'
+                           type="text"
+                           name="q"
+                           value=""
+                           placeholder="Busque aquí por toda la tienda..."
+                           class="input-text"
+                           maxlength="128"
+                           role="combobox"
+                           aria-haspopup="false"
+                           aria-autocomplete="both"
+                           autocomplete="off"/>
+                    <div id="search_autocomplete" class="search-autocomplete"></div>
+                    <div class="nested">
+    <a class="action advanced" href="https://www.colchasconcord.com.mx/catalogsearch/advanced/" data-action="advanced-search">
+        Búsqueda Avanzada    </a>
+</div>
+                </div>
+            </div>
+            <div class="actions">
+                <button type="submit"
+                        title="Búsqueda"
+                        class="action search">
+                    <span>Búsqueda</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+        </div>
+    
+        <div class="sections nav-sections">
+                <div class="section-items nav-sections-items" data-mage-init='{"tabs":{"openedState":"active"}}'>
+                                            <div class="section-item-title nav-sections-item-title" data-role="collapsible">
+                    <a class="nav-sections-item-switch" data-toggle="switch" href="#store.menu">Menú</a>
+                </div>
+                <div class="section-item-content nav-sections-item-content" id="store.menu" data-role="content">    
+    <nav class="navigation sw-megamenu " role="navigation">
+        <ul>
+            <li class="ui-menu-item level0 classic "><a href="https://www.colchasconcord.com.mx/concord-hot" class="level-top"><span>Concord Hot</span></a></li><li class="ui-menu-item level0 classic parent "><div class="open-children-toggle"></div><a href="https://www.colchasconcord.com.mx/recamara" class="level-top"><span>Recámara</span></a><div class="level0 submenu"><div class="row"><ul class="subchildmenu "><li class="ui-menu-item level1 parent "><div class="open-children-toggle"></div><a href="https://www.colchasconcord.com.mx/recamara/edredones"><span>Edredones</span></a><ul class="subchildmenu "><li class="ui-menu-item level2 "><a href="https://www.colchasconcord.com.mx/recamara/edredones/lavables-en-casa-2-vistas"><span>Lavables </span></a></li><li class="ui-menu-item level2 "><a href="https://www.colchasconcord.com.mx/recamara/edredones/bordados-importados"><span>Bordados e Importados</span></a></li></ul></li><li class="ui-menu-item level1 parent "><div class="open-children-toggle"></div><a href="https://www.colchasconcord.com.mx/recamara/colchas"><span>Colchas</span></a><ul class="subchildmenu "><li class="ui-menu-item level2 "><a href="https://www.colchasconcord.com.mx/recamara/colchas/confundas"><span>Con fundas </span></a></li><li class="ui-menu-item level2 "><a href="https://www.colchasconcord.com.mx/recamara/colchas/sencillas"><span>Sencilla</span></a></li><li class="ui-menu-item level2 "><a href="https://www.colchasconcord.com.mx/recamara/colchas/jacquard"><span>Jacquard</span></a></li></ul></li><li class="ui-menu-item level1 parent "><div class="open-children-toggle"></div><a href="https://www.colchasconcord.com.mx/recamara/cobertores"><span>Cobertores</span></a><ul class="subchildmenu "><li class="ui-menu-item level2 "><a href="https://www.colchasconcord.com.mx/recamara/cobertores/pachicalientito"><span>Pachicalientitos</span></a></li><li class="ui-menu-item level2 "><a href="https://www.colchasconcord.com.mx/recamara/cobertores/ozzy-calientito"><span>Ozzy Calientitos</span></a></li><li class="ui-menu-item level2 "><a href="https://www.colchasconcord.com.mx/recamara/cobertores/ultrasuaves"><span>Ultrasuaves</span></a></li><li class="ui-menu-item level2 "><a href="https://www.colchasconcord.com.mx/recamara/cobertores/frazadas"><span>Frazadas</span></a></li><li class="ui-menu-item level2 "><a href="https://www.colchasconcord.com.mx/recamara/cobertores/ozzy-calientitos"><span>Ozzy calientitos</span></a></li></ul></li><li class="ui-menu-item level1 parent "><div class="open-children-toggle"></div><a href="https://www.colchasconcord.com.mx/recamara/sabanas"><span>Sábanas</span></a><ul class="subchildmenu "><li class="ui-menu-item level2 "><a href="https://www.colchasconcord.com.mx/recamara/sabanas/suavitec"><span>Suavitec</span></a></li><li class="ui-menu-item level2 "><a href="https://www.colchasconcord.com.mx/recamara/sabanas/estampada-suavitec"><span>Estampada Suavitec</span></a></li><li class="ui-menu-item level2 "><a href="https://www.colchasconcord.com.mx/recamara/sabanas/franela"><span>Franela</span></a></li><li class="ui-menu-item level2 "><a href="https://www.colchasconcord.com.mx/recamara/sabanas/"><span></span></a></li></ul></li><li class="ui-menu-item level1 parent "><div class="open-children-toggle"></div><a href="https://www.colchasconcord.com.mx/recamara/cortinas"><span>Cortinas</span></a><ul class="subchildmenu "><li class="ui-menu-item level2 "><a href="https://www.colchasconcord.com.mx/recamara/cortinas/decorativas"><span>Decorativas</span></a></li><li class="ui-menu-item level2 "><a href="https://www.colchasconcord.com.mx/recamara/cortinas/blackout"><span>Blackout</span></a></li><li class="ui-menu-item level2 "><a href="https://www.colchasconcord.com.mx/recamara/cortinas/tergal"><span>Tergal</span></a></li><li class="ui-menu-item level2 "><a href="https://www.colchasconcord.com.mx/recamara/cortinas/jacquard"><span>Jacquard</span></a></li></ul></li><li class="ui-menu-item level1 parent "><div class="open-children-toggle"></div><a href="https://www.colchasconcord.com.mx/recamara/basicos"><span>Básicos</span></a><ul class="subchildmenu "><li class="ui-menu-item level2 "><a href="https://www.colchasconcord.com.mx/recamara/basicos/protectores-de-colchon"><span>Protectores de Colchón</span></a></li><li class="ui-menu-item level2 "><a href="https://www.colchasconcord.com.mx/recamara/basicos/rodapies"><span>Rodapies</span></a></li><li class="ui-menu-item level2 "><a href="https://www.colchasconcord.com.mx/recamara/basicos/pabellones"><span>Pabellones</span></a></li></ul></li><li class="ui-menu-item level1 parent "><div class="open-children-toggle"></div><a href="https://www.colchasconcord.com.mx/recamara/almohadas"><span>Almohadas</span></a><ul class="subchildmenu "><li class="ui-menu-item level2 "><a href="https://www.colchasconcord.com.mx/recamara/almohadas/decorativas"><span>Decorativas</span></a></li><li class="ui-menu-item level2 "><a href="https://www.colchasconcord.com.mx/recamara/almohadas/ortopedicas"><span>Ortopédicas</span></a></li><li class="ui-menu-item level2 "><a href="https://www.colchasconcord.com.mx/recamara/almohadas/body"><span>Body</span></a></li><li class="ui-menu-item level2 "><a href="https://www.colchasconcord.com.mx/recamara/almohadas/fundas"><span>Fundas</span></a></li></ul></li><li class="ui-menu-item level1 parent "><div class="open-children-toggle"></div><a href="https://www.colchasconcord.com.mx/recamara/cojines"><span>Cojines</span></a><ul class="subchildmenu "><li class="ui-menu-item level2 "><a href="https://www.colchasconcord.com.mx/recamara/cojines/decorativos"><span>Decorativos</span></a></li><li class="ui-menu-item level2 "><a href="https://www.colchasconcord.com.mx/recamara/cojines/microperlas"><span>Microperlas</span></a></li></ul></li></ul></div></div></li><li class="ui-menu-item level0 classic parent "><div class="open-children-toggle"></div><a href="https://www.colchasconcord.com.mx/campa-a" class="level-top"><span>Campaña </span></a><div class="level0 submenu"><div class="row"><ul class="subchildmenu "><li class="ui-menu-item level1 "><a href="https://www.colchasconcord.com.mx/campa-a/campa-a-3"><span>Campaña 3</span></a></li></ul></div></div></li><li class="ui-menu-item level0 classic parent "><div class="open-children-toggle"></div><a href="https://www.colchasconcord.com.mx/bebe" class="level-top"><span>Bebé</span></a><div class="level0 submenu"><div class="row"><ul class="subchildmenu "><li class="ui-menu-item level1 "><a href="https://www.colchasconcord.com.mx/bebe/edredones"><span>Edredones</span></a></li><li class="ui-menu-item level1 "><a href="https://www.colchasconcord.com.mx/bebe/sabanas"><span>Sábanas</span></a></li><li class="ui-menu-item level1 "><a href="https://www.colchasconcord.com.mx/bebe/cojines"><span>Cojines</span></a></li><li class="ui-menu-item level1 "><a href="https://www.colchasconcord.com.mx/bebe/cobertores"><span>Cobertores</span></a></li><li class="ui-menu-item level1 "><a href="https://www.colchasconcord.com.mx/bebe/costalitos"><span>Costalitos</span></a></li><li class="ui-menu-item level1 "><a href="https://www.colchasconcord.com.mx/bebe/protectores"><span>Protectores</span></a></li></ul></div></div></li><li class="ui-menu-item level0 classic parent "><div class="open-children-toggle"></div><a href="https://www.colchasconcord.com.mx/cocina" class="level-top"><span>Cocina</span></a><div class="level0 submenu"><div class="row"><ul class="subchildmenu "><li class="ui-menu-item level1 parent "><div class="open-children-toggle"></div><a href="https://www.colchasconcord.com.mx/cocina/manteles"><span>Manteles</span></a><ul class="subchildmenu "><li class="ui-menu-item level2 "><a href="https://www.colchasconcord.com.mx/cocina/manteles/rectangulares"><span>Rectangulares</span></a></li><li class="ui-menu-item level2 "><a href="https://www.colchasconcord.com.mx/cocina/manteles/circulares"><span>Circulares</span></a></li></ul></li><li class="ui-menu-item level1 "><a href="https://www.colchasconcord.com.mx/cocina/cortinas"><span>Cortinas</span></a></li><li class="ui-menu-item level1 "><a href="https://www.colchasconcord.com.mx/cocina/cojin-para-silla"><span>Cojín para Silla</span></a></li><li class="ui-menu-item level1 "><a href="https://www.colchasconcord.com.mx/cocina/set-de-cocina"><span>Set de cocina</span></a></li><li class="ui-menu-item level1 "><a href="https://www.colchasconcord.com.mx/cocina/cojin-de-silla"><span>Cojín de Silla</span></a></li></ul></div></div></li><li class="ui-menu-item level0 classic parent "><div class="open-children-toggle"></div><a href="https://www.colchasconcord.com.mx/ba-o" class="level-top"><span>Baño</span></a><div class="level0 submenu"><div class="row"><ul class="subchildmenu "><li class="ui-menu-item level1 "><a href="https://www.colchasconcord.com.mx/ba-o/cortina-de-ba-o"><span>Cortina de baño</span></a></li><li class="ui-menu-item level1 "><a href="https://www.colchasconcord.com.mx/ba-o/juegos-de-ba-o"><span>Juegos de baño</span></a></li><li class="ui-menu-item level1 parent "><div class="open-children-toggle"></div><a href="https://www.colchasconcord.com.mx/ba-o/toallas"><span>Toallas</span></a><ul class="subchildmenu "><li class="ui-menu-item level2 "><a href="https://www.colchasconcord.com.mx/ba-o/toallas/de-ba-o"><span>De Baño</span></a></li><li class="ui-menu-item level2 "><a href="https://www.colchasconcord.com.mx/ba-o/toallas/infantiles"><span>Infantiles</span></a></li></ul></li></ul></div></div></li><li class="ui-menu-item level0 classic parent "><div class="open-children-toggle"></div><a href="https://www.colchasconcord.com.mx/sala" class="level-top"><span>Sala</span></a><div class="level0 submenu"><div class="row"><ul class="subchildmenu "><li class="ui-menu-item level1 "><a href="https://www.colchasconcord.com.mx/sala/protectores-de-sala"><span>Protectores de Sala</span></a></li><li class="ui-menu-item level1 "><a href="https://www.colchasconcord.com.mx/sala/cubre-salas"><span>Cubre Salas</span></a></li></ul></div></div></li><li class="ui-menu-item level0 classic parent "><div class="open-children-toggle"></div><a href="https://www.colchasconcord.com.mx/accesorios" class="level-top"><span>Accesorios</span></a><div class="level0 submenu"><div class="row"><ul class="subchildmenu "><li class="ui-menu-item level1 "><a href="https://www.colchasconcord.com.mx/accesorios/toallas-y-tapetes-deportivos"><span>Tapetes</span></a></li></ul></div></div></li><li class="ui-menu-item level0 classic parent "><div class="open-children-toggle"></div><a href="https://www.colchasconcord.com.mx/catalogos" class="level-top"><span>Catálogos</span></a><div class="level0 submenu"><div class="row"><ul class="subchildmenu "><li class="ui-menu-item level1 "><a href="https://www.colchasconcord.com.mx/catalogos/catalogo-fisico"><span>Catálogo Físico</span></a></li><li class="ui-menu-item level1 "><a href="https://www.colchasconcord.com.mx/catalogos/gratis-catalogo-digital"><span>GRATIS Catálogo-Digital </span></a></li><li class="ui-menu-item level1 "><a href="https://www.colchasconcord.com.mx/catalogos/catalogo-interactivo"><span>Catálogo Interactivo</span></a></li></ul></div></div></li>        </ul>
+    </nav>
+
+    <script type="text/javascript">
+        require([
+            'jquery',
+            'Smartwave_Megamenu/js/sw_megamenu'
+        ], function($) {
+            if (typeof $(".sw-megamenu").swMegamenu == 'function') {
+                $(".sw-megamenu").swMegamenu();
+            }
+        });
+    </script>
+</div>
+                                            <div class="section-item-title nav-sections-item-title" data-role="collapsible">
+                    <a class="nav-sections-item-switch" data-toggle="switch" href="#store.links">Cuenta</a>
+                </div>
+                <div class="section-item-content nav-sections-item-content" id="store.links" data-role="content"><!-- Account links --></div>
+                                    </div>
+    </div>
+</header><div class="page messages"><div data-placeholder="messages"></div>
+<div data-bind="scope: 'messages'">
+    <div data-bind="foreach: { data: cookieMessages, as: 'message' }" class="messages">
+        <div data-bind="attr: {
+            class: 'message-' + message.type + ' ' + message.type + ' message',
+            'data-ui-id': 'message-' + message.type
+        }">
+            <div data-bind="html: message.text"></div>
+        </div>
+    </div>
+    <div data-bind="foreach: { data: messages().messages, as: 'message' }" class="messages">
+        <div data-bind="attr: {
+            class: 'message-' + message.type + ' ' + message.type + ' message',
+            'data-ui-id': 'message-' + message.type
+        }">
+            <div data-bind="html: message.text"></div>
+        </div>
+    </div>
+</div>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                        "messages": {
+                            "component": "Magento_Theme/js/view/messages"
+                        }
+                    }
+                }
+            }
+    }
+</script>
+</div>  
+
+
+<div class="container" style="padding: 0 15px 20px 15px;">
+    <div class="row" style="margin: 0 -10px;">
+    <div class="col-md-9 md-f-right" style="padding: 0 10px; margin-top: 20px;">
+
+
+    <div id="banner-slider-demo-2" class="owl-carousel owl-bottom-absolute-narrow owl-border-radius-7 owl-banner-carousel sm-xs-margin-bottom">
+    
+  <div class="item"><a href="https://www.colchasconcord.com.mx/concord-hot"><img src="https://www.colchasconcord.com.mx/media/wysiwyg/BANNERHot-concord.jpg" alt="" /></a></div>
+
+    <div class="item"><a href="https://www.colchasconcord.com.mx/campa-a/campa-a-3"><img src="https://www.colchasconcord.com.mx/media/wysiwyg/BANNER_HOME-POSTER.jpg" alt="" /></a></div>
+
+    <div class="item"><a href="https://www.colchasconcord.com.mx"><img src="https://www.colchasconcord.com.mx/media/wysiwyg/BANNER_HOME_ENV_OS.jpg" alt="" /></a></div>
+
+    <div class="item"><a href="https://www.colchasconcord.com.mx/catalogos/gratis-catalogo-digital"><img src="https://www.colchasconcord.com.mx/media/wysiwyg/BANNER_HOME_CATALOGO_CELULAR.jpg" alt="" /></a></div>
+
+    <div class="item"><a href="https://www.colchasconcord.com.mx/catalogos/catalogo-fisico"><img src="https://www.colchasconcord.com.mx/media/wysiwyg/BANNER_HOME_CAT_LOGO.jpg" alt="" /></a></div>
+
+ <!--   <div class="item"><a href="https://www.colchasconcord.com.mx/concord-home"><img src="https://www.colchasconcord.com.mx/media/wysiwyg/wysiwyg/ban-home-conc-home.png" alt="" /></a></div>-->
+
+<!--<div class="item"><a href="https://www.colchasconcord.com.mx"><img src="https://www.colchasconcord.com.mx/media/wysiwyg/wysiwyg/ecopack-info.png" alt="" /></a></div>-->
+    </div>
+    
+    <style>
+    .video-home { width: 100%; }
+    @media (min-width: 992px) { .video-home {height: 450px; } }
+    @media (min-width: 881px) and (max-width: 991px) { .video-home { height: calc(100vw * 0.47);} }
+    @media (min-width: 768px) and (max-width: 880px) { .video-home {height: calc(100vw * 0.5); } }
+    @media (max-width: 767px) { .video-home {height: calc(100vw * 0.5); } }
+    </style>
+    
+    
+    <script type="text/javascript" xml="space">// 
+            require([
+                'jquery',
+                'owl.carousel/owl.carousel.min'
+                ], function ($) {
+                    $("#banner-slider-demo-2").owlCarousel({
+                        items: 1,
+                        autoplay: true,
+                        autoplayTimeout: 7000,
+                        autoplayHoverPause: true,
+                        dots: true,
+                        navRewind: true,
+                        animateIn: 'fadeIn',
+                        animateOut: 'fadeOut',
+                        loop: true,
+                        nav: false
+                    });
+                });
+    
+    </script>
+    </div>
+    <div class="col-md-3" style="padding: 0 10px; margin-top: 20px;">
+    <div class="row">
+    <div class="col-md-12 col-sm-6">
+    <div class="side-custom-menu" style="margin-bottom: 11px;"><em class="porto-icon-menu icon-concord-menu"></em>
+    <h2>CONÓCENOS</h2>
+    <ul>
+    <li><a href="https://www.colchasconcord.com.mx/customer/account/login/">Afíliate / Inicia sesión/ Activa tu cuenta.</a></li>
+    <li><a href="ayuda">Preguntas Frecuentes</a></li>
+    <li><a href="https://www.colchasconcord.com.mx/usos-y-cuidados">Usos y cuidados</a></li>
+    <li><a href="https://www.colchasconcord.com.mx/nuestra-cultura-organizacional">Cultura Organizacional</a></li>
+    
+    </ul>
+    </div>
+    </div>
+    <div class="col-md-12 col-sm-6">
+    <div class="side-custom-menu">
+    <h2><em class="porto-icon-menu"></em> DESTACADOS</h2>
+    <ul>
+    <li><a title="Recamara" href="https://www.colchasconcord.com.mx/catalog/category/view/s/recamara/id/38/">Recámara</a></li>
+    <li><a title="Campaña" href="https://www.colchasconcord.com.mx/campa-a/campa-a-3">Campaña</a></li>
+    <li><a title="B&aacute;sicos" href="https://www.colchasconcord.com.mx/recamara/basicos">B&aacute;sicos</a></li>
+    <li><a title="Cobertor" href="https://www.colchasconcord.com.mx/recamara/cobertores">Cobertor</a></li>
+    <li><a title="Edredon" href="https://www.colchasconcord.com.mx/recamara/edredones">Edredón</a></li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    
+    <br><center><a href="https://www.colchasconcord.com.mx/campa-a/campa-a-3"><em style="font-size:20px"><b>¡ Da clic aquí y conoce todos los productos en promoción !</b></em></a></center><br><br>
+    
+    <div style="background-color: #fff;">
+       <div class="homepage-bar">
+          <div class="container">
+             <div class="row">
+     <br></br>
+               <div class="col-md-3">
+                   <div class="text-area-1"><a href="https://bit.ly/3jwwCl5"><em class="catalog-concord img-concord-home"></em></a>
+                   <h3><a style="color: #000;" href="https://bit.ly/3jwwCl5">&nbsp;&nbsp;DESCARGA TU CATÁLOGO <p>&nbsp;&nbsp;&nbsp;Conoce la nueva colección 2022.</p></a></h3>
+       <br></br>
+               </div>
+            </div>
+            <div class="col-md-3">
+               <div class="text-area-2"><a href="como-vender"><em class="earnings-concord img-concord-home"></em></a>
+                  <h3><a style="color: #000;" href="https://www.colchasconcord.com.mx/como-vender">¿CÓMO VENDER? <p>Ofrecemos los m&aacute;rgenes de ganancia más altos del segmento de ventas por catálogo.</p></a></h3>
+                    <br></br>
+               </div>
+            </div>
+            <div class="col-md-3">
+               <div class="text-area-3"><a  style="color: #000;"  href="https://www.colchasconcord.com.mx/storelocator/"><em class="locations-concord img-concord-home"></em>
+                   <h3>&iquest;D&Oacute;NDE COMPRAR?<p>Ubica tu tienda más cercana con la ayuda de esta herramienta.</p></a></h3>
+       <br></br>
+               </div>
+            </div>
+            <!--<div class="col-md-3"> <a  style="color: #000;"  href="https://api.whatsapp.com/send?phone=+525558707011&text=Hola, deseo obtener más información." target=__blank><img style="float:left; opacity: 0.75"  src="https://www.colchasconcord.com.mx/media/wysiwyg/qbo/Movil_Whats.png" />
+               <div class="text-area-3">
+                  <h3>&nbsp;&nbsp;&nbsp;¿TIENES DUDAS? <p>Envíanos un WhatsApp.</p></a></h3>
+       <br></br>
+                 </div>
+              </div>-->
+           </div>
+        </div>
+     </div>
+    
+    
+    <div style="padding-top: 20px;">
+    <div class="container">
+    <div class="row">
+    <div class="col-sm-12 container-new-products">
+    <h2 class="filterproduct-title"><span class="content"><strong>Novedades</strong></span></h2>
+    <div id="new_product" class="owl-top-narrow">        <div class="products wrapper grid products-grid">
+                    <div class="filterproducts products list items product-items owl-carousel">
+                                            <div class="item product product-item">                <div class="product-item-info" data-container="product-grid">
+                            <div class="product photo product-item-photo">
+                                                                          <div class="container-labels-concord">
+                                                                  <img class="label-new" src="https://www.colchasconcord.com.mx/static/version1643241833/frontend/qbo/theme/es_MX/images/new_label.png">                                                            </div>
+                        
+                        <a href="https://www.colchasconcord.com.mx/tapete-dolly" tabindex="-1">
+                            
+                            <img class="product-image-photo default_image " src="https://www.colchasconcord.com.mx/media/catalog/product/cache/thumbnail/270x270/e9c3970ab036de70892d86c6d221abfe/t/a/tapu016_1.jpg" alt="Tapete Dolly"/>
+                                                    </a>
+                                                            <div class="group-details">
+                                                <strong class="product name product-item-name">
+                            <a class="product-item-link"
+                               href="https://www.colchasconcord.com.mx/tapete-dolly">
+        Tapete Dolly                            </a>
+                        </strong>
+                                                                                                                                        <div class="product-reviews-summary short no-rating">
+    
+    <div class="rating-summary">
+        <span class="label"><span>Valoración:</span></span>
+        <div class="rating-result" title="%">
+            <span style="width:%"><span>%</span></span>
+        </div>
+    </div>
+    
+    <div class="reviews-actions">
+        <a class="action view" href="https://www.colchasconcord.com.mx/tapete-dolly#reviews">&nbsp;<span>Reseñas</span></a>
+    </div>
+</div>
+                                                                                                                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="10313">
+    <span class="normal-price">
+        
+
+<span class="price-container price-final_price tax weee"
+        >
+        <span  id="product-price-10313"                data-price-amount="249"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+        >
+        <span class="price">$249.00</span>    </span>
+        </span>
+    </span>
+
+</div>                                            </div>
+                    </div>
+                    <div class="product details product-item-details">
+
+       
+                        <a class="weltpixel-quickview weltpixel_quickview_button_v1" data-quickview-url=https://www.colchasconcord.com.mx/weltpixel_quickview/catalog_product/view/id/10313/ href="javascript:void(0);"><span>Vista rápida</span></a>
+                                    <div class="product-item-inner">
+                                <div class="product actions product-item-actions">
+                                                                                                                                                <a href="#"
+                                                   class="action towishlist actions-secondary"
+                                                   title="Agregar a los favoritos"
+                                                   aria-label="Agregar a los favoritos"
+                                                   data-post='{"action":"https:\/\/www.colchasconcord.com.mx\/wishlist\/index\/add\/","data":{"product":"10313","uenc":"aHR0cHM6Ly93d3cuY29sY2hhc2NvbmNvcmQuY29tLm14Lw,,"}}'
+                                                   data-action="add-to-wishlist"
+                                                   role="button">
+                                                    <span>Agregar a los favoritos</span>
+                                                </a>
+                                                                                                                                                                <div class="actions-primary">
+                                                                                                    <form data-role="tocart-form" action="https://www.colchasconcord.com.mx/checkout/cart/add/uenc/aHR0cHM6Ly93d3cuY29sY2hhc2NvbmNvcmQuY29tLm14Lw,,/product/10313/" method="post">
+                                                <input type="hidden" name="product" value="10313">
+                                                <input type="hidden" name="uenc" value="aHR0cHM6Ly93d3cuY29sY2hhc2NvbmNvcmQuY29tLm14L2NoZWNrb3V0L2NhcnQvYWRkL3VlbmMvYUhSMGNITTZMeTkzZDNjdVkyOXNZMmhoYzJOdmJtTnZjbVF1WTI5dExtMTRMdywsL3Byb2R1Y3QvMTAzMTMv">
+                <input name="form_key" type="hidden" value="sAZi6AokyyKXdKug" />                                                <button type="submit"
+                                                        title="Añadir al carrito"
+                                                        class="action tocart primary">
+                                                    <span>Añadir al carrito</span>
+                                                </button>
+                                            </form>
+                                                                            </div>
+                                                                                                                                                        <a href="#"
+                                           class="action tocompare actions-secondary"
+                                           title="Añadir para comparar"
+                                           aria-label="Añadir para comparar"
+                                           data-post='{"action":"https:\/\/www.colchasconcord.com.mx\/catalog\/product_compare\/add\/","data":{"product":"10313","uenc":"aHR0cHM6Ly93d3cuY29sY2hhc2NvbmNvcmQuY29tLm14Lw,,"}}'
+                                           role="button">
+                                            <span>Añadir para comparar</span>
+                                        </a>
+                                            </div>
+                            </div>
+                            </div>
+                </div>
+                                        </div><div class="item product product-item">                <div class="product-item-info" data-container="product-grid">
+                            <div class="product photo product-item-photo">
+                                                                          <div class="container-labels-concord">
+                                                                  <img class="label-new" src="https://www.colchasconcord.com.mx/static/version1643241833/frontend/qbo/theme/es_MX/images/new_label.png">                                                            </div>
+                        
+                        <a href="https://www.colchasconcord.com.mx/toalla-con-capucha-unicornio" tabindex="-1">
+                            
+                            <img class="product-image-photo default_image " src="https://www.colchasconcord.com.mx/media/catalog/product/cache/thumbnail/270x270/e9c3970ab036de70892d86c6d221abfe/s/5/s524iup.jpg" alt="Toalla con capucha Unicornio"/>
+                                                    </a>
+                                                            <div class="group-details">
+                                                <strong class="product name product-item-name">
+                            <a class="product-item-link"
+                               href="https://www.colchasconcord.com.mx/toalla-con-capucha-unicornio">
+        Toalla con capucha Unicornio                            </a>
+                        </strong>
+                                                                                                                                        <div class="product-reviews-summary short no-rating">
+    
+    <div class="rating-summary">
+        <span class="label"><span>Valoración:</span></span>
+        <div class="rating-result" title="%">
+            <span style="width:%"><span>%</span></span>
+        </div>
+    </div>
+    
+    <div class="reviews-actions">
+        <a class="action view" href="https://www.colchasconcord.com.mx/toalla-con-capucha-unicornio#reviews">&nbsp;<span>Reseñas</span></a>
+    </div>
+</div>
+                                                                                                                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="10321">
+    <span class="normal-price">
+        
+
+<span class="price-container price-final_price tax weee"
+        >
+        <span  id="product-price-10321"                data-price-amount="349"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+        >
+        <span class="price">$349.00</span>    </span>
+        </span>
+    </span>
+
+</div>                                            </div>
+                    </div>
+                    <div class="product details product-item-details">
+
+       
+                        <a class="weltpixel-quickview weltpixel_quickview_button_v1" data-quickview-url=https://www.colchasconcord.com.mx/weltpixel_quickview/catalog_product/view/id/10321/ href="javascript:void(0);"><span>Vista rápida</span></a>
+                                    <div class="product-item-inner">
+                                <div class="product actions product-item-actions">
+                                                                                                                                                <a href="#"
+                                                   class="action towishlist actions-secondary"
+                                                   title="Agregar a los favoritos"
+                                                   aria-label="Agregar a los favoritos"
+                                                   data-post='{"action":"https:\/\/www.colchasconcord.com.mx\/wishlist\/index\/add\/","data":{"product":"10321","uenc":"aHR0cHM6Ly93d3cuY29sY2hhc2NvbmNvcmQuY29tLm14Lw,,"}}'
+                                                   data-action="add-to-wishlist"
+                                                   role="button">
+                                                    <span>Agregar a los favoritos</span>
+                                                </a>
+                                                                                                                                                                <div class="actions-primary">
+                                                                                                    <form data-role="tocart-form" action="https://www.colchasconcord.com.mx/checkout/cart/add/uenc/aHR0cHM6Ly93d3cuY29sY2hhc2NvbmNvcmQuY29tLm14Lw,,/product/10321/" method="post">
+                                                <input type="hidden" name="product" value="10321">
+                                                <input type="hidden" name="uenc" value="aHR0cHM6Ly93d3cuY29sY2hhc2NvbmNvcmQuY29tLm14L2NoZWNrb3V0L2NhcnQvYWRkL3VlbmMvYUhSMGNITTZMeTkzZDNjdVkyOXNZMmhoYzJOdmJtTnZjbVF1WTI5dExtMTRMdywsL3Byb2R1Y3QvMTAzMjEv">
+                <input name="form_key" type="hidden" value="sAZi6AokyyKXdKug" />                                                <button type="submit"
+                                                        title="Añadir al carrito"
+                                                        class="action tocart primary">
+                                                    <span>Añadir al carrito</span>
+                                                </button>
+                                            </form>
+                                                                            </div>
+                                                                                                                                                        <a href="#"
+                                           class="action tocompare actions-secondary"
+                                           title="Añadir para comparar"
+                                           aria-label="Añadir para comparar"
+                                           data-post='{"action":"https:\/\/www.colchasconcord.com.mx\/catalog\/product_compare\/add\/","data":{"product":"10321","uenc":"aHR0cHM6Ly93d3cuY29sY2hhc2NvbmNvcmQuY29tLm14Lw,,"}}'
+                                           role="button">
+                                            <span>Añadir para comparar</span>
+                                        </a>
+                                            </div>
+                            </div>
+                            </div>
+                </div>
+                                        </div><div class="item product product-item">                <div class="product-item-info" data-container="product-grid">
+                            <div class="product photo product-item-photo">
+                                                                          <div class="container-labels-concord">
+                                                                  <img class="label-new" src="https://www.colchasconcord.com.mx/static/version1643241833/frontend/qbo/theme/es_MX/images/new_label.png">                                                            </div>
+                        
+                        <a href="https://www.colchasconcord.com.mx/colcha-camila-matrimonial" tabindex="-1">
+                            
+                            <img class="product-image-photo default_image " src="https://www.colchasconcord.com.mx/media/catalog/product/cache/thumbnail/270x270/e9c3970ab036de70892d86c6d221abfe/c/s/csem116.jpg" alt="Colcha Camila Matrimonial"/>
+                                                    </a>
+                                                            <div class="group-details">
+                                                <strong class="product name product-item-name">
+                            <a class="product-item-link"
+                               href="https://www.colchasconcord.com.mx/colcha-camila-matrimonial">
+        Colcha Camila Matrimonial                            </a>
+                        </strong>
+                                                                                                                                        <div class="product-reviews-summary short no-rating">
+    
+    <div class="rating-summary">
+        <span class="label"><span>Valoración:</span></span>
+        <div class="rating-result" title="%">
+            <span style="width:%"><span>%</span></span>
+        </div>
+    </div>
+    
+    <div class="reviews-actions">
+        <a class="action view" href="https://www.colchasconcord.com.mx/colcha-camila-matrimonial#reviews">&nbsp;<span>Reseñas</span></a>
+    </div>
+</div>
+                                                                                                                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="10219">
+    <span class="normal-price">
+        
+
+<span class="price-container price-final_price tax weee"
+        >
+        <span  id="product-price-10219"                data-price-amount="699"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+        >
+        <span class="price">$699.00</span>    </span>
+        </span>
+    </span>
+
+</div>                                            </div>
+                    </div>
+                    <div class="product details product-item-details">
+
+       
+                        <a class="weltpixel-quickview weltpixel_quickview_button_v1" data-quickview-url=https://www.colchasconcord.com.mx/weltpixel_quickview/catalog_product/view/id/10219/ href="javascript:void(0);"><span>Vista rápida</span></a>
+                                    <div class="product-item-inner">
+                                <div class="product actions product-item-actions">
+                                                                                                                                                <a href="#"
+                                                   class="action towishlist actions-secondary"
+                                                   title="Agregar a los favoritos"
+                                                   aria-label="Agregar a los favoritos"
+                                                   data-post='{"action":"https:\/\/www.colchasconcord.com.mx\/wishlist\/index\/add\/","data":{"product":"10219","uenc":"aHR0cHM6Ly93d3cuY29sY2hhc2NvbmNvcmQuY29tLm14Lw,,"}}'
+                                                   data-action="add-to-wishlist"
+                                                   role="button">
+                                                    <span>Agregar a los favoritos</span>
+                                                </a>
+                                                                                                                                                                <div class="actions-primary">
+                                                                                                    <form data-role="tocart-form" action="https://www.colchasconcord.com.mx/checkout/cart/add/uenc/aHR0cHM6Ly93d3cuY29sY2hhc2NvbmNvcmQuY29tLm14Lw,,/product/10219/" method="post">
+                                                <input type="hidden" name="product" value="10219">
+                                                <input type="hidden" name="uenc" value="aHR0cHM6Ly93d3cuY29sY2hhc2NvbmNvcmQuY29tLm14L2NoZWNrb3V0L2NhcnQvYWRkL3VlbmMvYUhSMGNITTZMeTkzZDNjdVkyOXNZMmhoYzJOdmJtTnZjbVF1WTI5dExtMTRMdywsL3Byb2R1Y3QvMTAyMTkv">
+                <input name="form_key" type="hidden" value="sAZi6AokyyKXdKug" />                                                <button type="submit"
+                                                        title="Añadir al carrito"
+                                                        class="action tocart primary">
+                                                    <span>Añadir al carrito</span>
+                                                </button>
+                                            </form>
+                                                                            </div>
+                                                                                                                                                        <a href="#"
+                                           class="action tocompare actions-secondary"
+                                           title="Añadir para comparar"
+                                           aria-label="Añadir para comparar"
+                                           data-post='{"action":"https:\/\/www.colchasconcord.com.mx\/catalog\/product_compare\/add\/","data":{"product":"10219","uenc":"aHR0cHM6Ly93d3cuY29sY2hhc2NvbmNvcmQuY29tLm14Lw,,"}}'
+                                           role="button">
+                                            <span>Añadir para comparar</span>
+                                        </a>
+                                            </div>
+                            </div>
+                            </div>
+                </div>
+                                        </div><div class="item product product-item">                <div class="product-item-info" data-container="product-grid">
+                            <div class="product photo product-item-photo">
+                                                                          <div class="container-labels-concord">
+                                                                  <img class="label-new" src="https://www.colchasconcord.com.mx/static/version1643241833/frontend/qbo/theme/es_MX/images/new_label.png">                                                            </div>
+                        
+                        <a href="https://www.colchasconcord.com.mx/cortina-decorativa-hot-wheels-blue" tabindex="-1">
+                            
+                            <img class="product-image-photo default_image " src="https://www.colchasconcord.com.mx/media/catalog/product/cache/thumbnail/270x270/e9c3970ab036de70892d86c6d221abfe/c/d/cdeu325.jpg" alt="Cortina decorativa Hot Wheels Blue"/>
+                                                    </a>
+                                                            <div class="group-details">
+                                                <strong class="product name product-item-name">
+                            <a class="product-item-link"
+                               href="https://www.colchasconcord.com.mx/cortina-decorativa-hot-wheels-blue">
+        Cortina decorativa Hot Wheels Blue                            </a>
+                        </strong>
+                                                                                                                                        <div class="product-reviews-summary short no-rating">
+    
+    <div class="rating-summary">
+        <span class="label"><span>Valoración:</span></span>
+        <div class="rating-result" title="%">
+            <span style="width:%"><span>%</span></span>
+        </div>
+    </div>
+    
+    <div class="reviews-actions">
+        <a class="action view" href="https://www.colchasconcord.com.mx/cortina-decorativa-hot-wheels-blue#reviews">&nbsp;<span>Reseñas</span></a>
+    </div>
+</div>
+                                                                                                                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="10145">
+    <span class="normal-price">
+        
+
+<span class="price-container price-final_price tax weee"
+        >
+        <span  id="product-price-10145"                data-price-amount="799"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+        >
+        <span class="price">$799.00</span>    </span>
+        </span>
+    </span>
+
+</div>                                            </div>
+                    </div>
+                    <div class="product details product-item-details">
+
+       
+                        <a class="weltpixel-quickview weltpixel_quickview_button_v1" data-quickview-url=https://www.colchasconcord.com.mx/weltpixel_quickview/catalog_product/view/id/10145/ href="javascript:void(0);"><span>Vista rápida</span></a>
+                                    <div class="product-item-inner">
+                                <div class="product actions product-item-actions">
+                                                                                                                                                <a href="#"
+                                                   class="action towishlist actions-secondary"
+                                                   title="Agregar a los favoritos"
+                                                   aria-label="Agregar a los favoritos"
+                                                   data-post='{"action":"https:\/\/www.colchasconcord.com.mx\/wishlist\/index\/add\/","data":{"product":"10145","uenc":"aHR0cHM6Ly93d3cuY29sY2hhc2NvbmNvcmQuY29tLm14Lw,,"}}'
+                                                   data-action="add-to-wishlist"
+                                                   role="button">
+                                                    <span>Agregar a los favoritos</span>
+                                                </a>
+                                                                                                                                                                <div class="actions-primary">
+                                                                                                    <form data-role="tocart-form" action="https://www.colchasconcord.com.mx/checkout/cart/add/uenc/aHR0cHM6Ly93d3cuY29sY2hhc2NvbmNvcmQuY29tLm14Lw,,/product/10145/" method="post">
+                                                <input type="hidden" name="product" value="10145">
+                                                <input type="hidden" name="uenc" value="aHR0cHM6Ly93d3cuY29sY2hhc2NvbmNvcmQuY29tLm14L2NoZWNrb3V0L2NhcnQvYWRkL3VlbmMvYUhSMGNITTZMeTkzZDNjdVkyOXNZMmhoYzJOdmJtTnZjbVF1WTI5dExtMTRMdywsL3Byb2R1Y3QvMTAxNDUv">
+                <input name="form_key" type="hidden" value="sAZi6AokyyKXdKug" />                                                <button type="submit"
+                                                        title="Añadir al carrito"
+                                                        class="action tocart primary">
+                                                    <span>Añadir al carrito</span>
+                                                </button>
+                                            </form>
+                                                                            </div>
+                                                                                                                                                        <a href="#"
+                                           class="action tocompare actions-secondary"
+                                           title="Añadir para comparar"
+                                           aria-label="Añadir para comparar"
+                                           data-post='{"action":"https:\/\/www.colchasconcord.com.mx\/catalog\/product_compare\/add\/","data":{"product":"10145","uenc":"aHR0cHM6Ly93d3cuY29sY2hhc2NvbmNvcmQuY29tLm14Lw,,"}}'
+                                           role="button">
+                                            <span>Añadir para comparar</span>
+                                        </a>
+                                            </div>
+                            </div>
+                            </div>
+                </div>
+                                        </div><div class="item product product-item">                <div class="product-item-info" data-container="product-grid">
+                            <div class="product photo product-item-photo">
+                                                                          <div class="container-labels-concord">
+                                                                  <img class="label-new" src="https://www.colchasconcord.com.mx/static/version1643241833/frontend/qbo/theme/es_MX/images/new_label.png">                                                            </div>
+                        
+                        <a href="https://www.colchasconcord.com.mx/edredon-lavable-con-fundas-hot-wheels-blue" tabindex="-1">
+                            
+                            <img class="product-image-photo default_image " src="https://www.colchasconcord.com.mx/media/catalog/product/cache/thumbnail/270x270/e9c3970ab036de70892d86c6d221abfe/e/f/efli553_1.jpg" alt="Edredón Lavable con fundas Hot Wheels Blue"/>
+                                                    </a>
+                                                            <div class="group-details">
+                                                <strong class="product name product-item-name">
+                            <a class="product-item-link"
+                               href="https://www.colchasconcord.com.mx/edredon-lavable-con-fundas-hot-wheels-blue">
+        Edredón Lavable con fundas Hot Wheels Blue                            </a>
+                        </strong>
+                                                                                                                                        <div class="product-reviews-summary short no-rating">
+    
+    <div class="rating-summary">
+        <span class="label"><span>Valoración:</span></span>
+        <div class="rating-result" title="%">
+            <span style="width:%"><span>%</span></span>
+        </div>
+    </div>
+    
+    <div class="reviews-actions">
+        <a class="action view" href="https://www.colchasconcord.com.mx/edredon-lavable-con-fundas-hot-wheels-blue#reviews">&nbsp;<span>Reseñas</span></a>
+    </div>
+</div>
+                                                                                                                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="10146">
+    <span class="normal-price">
+        
+
+<span class="price-container price-final_price tax weee"
+        >
+        <span  id="product-price-10146"                data-price-amount="999"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+        >
+        <span class="price">$999.00</span>    </span>
+        </span>
+    </span>
+
+</div>                                            </div>
+                    </div>
+                    <div class="product details product-item-details">
+
+       
+                        <a class="weltpixel-quickview weltpixel_quickview_button_v1" data-quickview-url=https://www.colchasconcord.com.mx/weltpixel_quickview/catalog_product/view/id/10146/ href="javascript:void(0);"><span>Vista rápida</span></a>
+                                    <div class="product-item-inner">
+                                <div class="product actions product-item-actions">
+                                                                                                                                                <a href="#"
+                                                   class="action towishlist actions-secondary"
+                                                   title="Agregar a los favoritos"
+                                                   aria-label="Agregar a los favoritos"
+                                                   data-post='{"action":"https:\/\/www.colchasconcord.com.mx\/wishlist\/index\/add\/","data":{"product":"10146","uenc":"aHR0cHM6Ly93d3cuY29sY2hhc2NvbmNvcmQuY29tLm14Lw,,"}}'
+                                                   data-action="add-to-wishlist"
+                                                   role="button">
+                                                    <span>Agregar a los favoritos</span>
+                                                </a>
+                                                                                                                                                                <div class="actions-primary">
+                                                                                                    <form data-role="tocart-form" action="https://www.colchasconcord.com.mx/checkout/cart/add/uenc/aHR0cHM6Ly93d3cuY29sY2hhc2NvbmNvcmQuY29tLm14Lw,,/product/10146/" method="post">
+                                                <input type="hidden" name="product" value="10146">
+                                                <input type="hidden" name="uenc" value="aHR0cHM6Ly93d3cuY29sY2hhc2NvbmNvcmQuY29tLm14L2NoZWNrb3V0L2NhcnQvYWRkL3VlbmMvYUhSMGNITTZMeTkzZDNjdVkyOXNZMmhoYzJOdmJtTnZjbVF1WTI5dExtMTRMdywsL3Byb2R1Y3QvMTAxNDYv">
+                <input name="form_key" type="hidden" value="sAZi6AokyyKXdKug" />                                                <button type="submit"
+                                                        title="Añadir al carrito"
+                                                        class="action tocart primary">
+                                                    <span>Añadir al carrito</span>
+                                                </button>
+                                            </form>
+                                                                            </div>
+                                                                                                                                                        <a href="#"
+                                           class="action tocompare actions-secondary"
+                                           title="Añadir para comparar"
+                                           aria-label="Añadir para comparar"
+                                           data-post='{"action":"https:\/\/www.colchasconcord.com.mx\/catalog\/product_compare\/add\/","data":{"product":"10146","uenc":"aHR0cHM6Ly93d3cuY29sY2hhc2NvbmNvcmQuY29tLm14Lw,,"}}'
+                                           role="button">
+                                            <span>Añadir para comparar</span>
+                                        </a>
+                                            </div>
+                            </div>
+                            </div>
+                </div>
+                                        </div><div class="item product product-item">                <div class="product-item-info" data-container="product-grid">
+                            <div class="product photo product-item-photo">
+                                                                          <div class="container-labels-concord">
+                                                                  <img class="label-new" src="https://www.colchasconcord.com.mx/static/version1643241833/frontend/qbo/theme/es_MX/images/new_label.png">                                                            </div>
+                        
+                        <a href="https://www.colchasconcord.com.mx/juego-de-sabanas-suavitec-hot-wheels-blue" tabindex="-1">
+                            
+                            <img class="product-image-photo default_image " src="https://www.colchasconcord.com.mx/media/catalog/product/cache/thumbnail/270x270/e9c3970ab036de70892d86c6d221abfe/s/i/sini127.jpg" alt="Juego de Sábanas Suavitec Hot Wheels Blue"/>
+                                                    </a>
+                                                            <div class="group-details">
+                                                <strong class="product name product-item-name">
+                            <a class="product-item-link"
+                               href="https://www.colchasconcord.com.mx/juego-de-sabanas-suavitec-hot-wheels-blue">
+        Juego de Sábanas Suavitec Hot Wheels Blue                            </a>
+                        </strong>
+                                                                                                                                        <div class="product-reviews-summary short no-rating">
+    
+    <div class="rating-summary">
+        <span class="label"><span>Valoración:</span></span>
+        <div class="rating-result" title="%">
+            <span style="width:%"><span>%</span></span>
+        </div>
+    </div>
+    
+    <div class="reviews-actions">
+        <a class="action view" href="https://www.colchasconcord.com.mx/juego-de-sabanas-suavitec-hot-wheels-blue#reviews">&nbsp;<span>Reseñas</span></a>
+    </div>
+</div>
+                                                                                                                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="10147">
+    <span class="normal-price">
+        
+
+<span class="price-container price-final_price tax weee"
+        >
+        <span  id="product-price-10147"                data-price-amount="799"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+        >
+        <span class="price">$799.00</span>    </span>
+        </span>
+    </span>
+
+</div>                                            </div>
+                    </div>
+                    <div class="product details product-item-details">
+
+       
+                        <a class="weltpixel-quickview weltpixel_quickview_button_v1" data-quickview-url=https://www.colchasconcord.com.mx/weltpixel_quickview/catalog_product/view/id/10147/ href="javascript:void(0);"><span>Vista rápida</span></a>
+                                    <div class="product-item-inner">
+                                <div class="product actions product-item-actions">
+                                                                                                                                                <a href="#"
+                                                   class="action towishlist actions-secondary"
+                                                   title="Agregar a los favoritos"
+                                                   aria-label="Agregar a los favoritos"
+                                                   data-post='{"action":"https:\/\/www.colchasconcord.com.mx\/wishlist\/index\/add\/","data":{"product":"10147","uenc":"aHR0cHM6Ly93d3cuY29sY2hhc2NvbmNvcmQuY29tLm14Lw,,"}}'
+                                                   data-action="add-to-wishlist"
+                                                   role="button">
+                                                    <span>Agregar a los favoritos</span>
+                                                </a>
+                                                                                                                                                                <div class="actions-primary">
+                                                                                                    <form data-role="tocart-form" action="https://www.colchasconcord.com.mx/checkout/cart/add/uenc/aHR0cHM6Ly93d3cuY29sY2hhc2NvbmNvcmQuY29tLm14Lw,,/product/10147/" method="post">
+                                                <input type="hidden" name="product" value="10147">
+                                                <input type="hidden" name="uenc" value="aHR0cHM6Ly93d3cuY29sY2hhc2NvbmNvcmQuY29tLm14L2NoZWNrb3V0L2NhcnQvYWRkL3VlbmMvYUhSMGNITTZMeTkzZDNjdVkyOXNZMmhoYzJOdmJtTnZjbVF1WTI5dExtMTRMdywsL3Byb2R1Y3QvMTAxNDcv">
+                <input name="form_key" type="hidden" value="sAZi6AokyyKXdKug" />                                                <button type="submit"
+                                                        title="Añadir al carrito"
+                                                        class="action tocart primary">
+                                                    <span>Añadir al carrito</span>
+                                                </button>
+                                            </form>
+                                                                            </div>
+                                                                                                                                                        <a href="#"
+                                           class="action tocompare actions-secondary"
+                                           title="Añadir para comparar"
+                                           aria-label="Añadir para comparar"
+                                           data-post='{"action":"https:\/\/www.colchasconcord.com.mx\/catalog\/product_compare\/add\/","data":{"product":"10147","uenc":"aHR0cHM6Ly93d3cuY29sY2hhc2NvbmNvcmQuY29tLm14Lw,,"}}'
+                                           role="button">
+                                            <span>Añadir para comparar</span>
+                                        </a>
+                                            </div>
+                            </div>
+                            </div>
+                </div>
+                                        </div><div class="item product product-item">                <div class="product-item-info" data-container="product-grid">
+                            <div class="product photo product-item-photo">
+                                                                          <div class="container-labels-concord">
+                                                                  <img class="label-new" src="https://www.colchasconcord.com.mx/static/version1643241833/frontend/qbo/theme/es_MX/images/new_label.png">                                                            </div>
+                        
+                        <a href="https://www.colchasconcord.com.mx/colcha-oliver" tabindex="-1">
+                            
+                            <img class="product-image-photo default_image " src="https://www.colchasconcord.com.mx/media/catalog/product/cache/thumbnail/270x270/e9c3970ab036de70892d86c6d221abfe/c/s/csem047_2.jpg" alt="Colcha Oliver"/>
+                                                    </a>
+                                                            <div class="group-details">
+                                                <strong class="product name product-item-name">
+                            <a class="product-item-link"
+                               href="https://www.colchasconcord.com.mx/colcha-oliver">
+        Colcha Oliver                            </a>
+                        </strong>
+                                                                                                                                        <div class="product-reviews-summary short no-rating">
+    
+    <div class="rating-summary">
+        <span class="label"><span>Valoración:</span></span>
+        <div class="rating-result" title="%">
+            <span style="width:%"><span>%</span></span>
+        </div>
+    </div>
+    
+    <div class="reviews-actions">
+        <a class="action view" href="https://www.colchasconcord.com.mx/colcha-oliver#reviews">&nbsp;<span>Reseñas</span></a>
+    </div>
+</div>
+                                                                                                                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="10150">
+    
+
+<span class="price-container price-final_price tax weee"
+        >
+        <span  id="product-price-10150"                data-price-amount="649"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+        >
+        <span class="price">$649.00</span>    </span>
+        </span>
+
+</div>                                            </div>
+                    </div>
+                    <div class="product details product-item-details">
+
+       
+                        <div class="swatch-opt-10150"></div>
+<script>
+    require(["jquery", "jquery/ui","priceBox", "Qbo_DropdownSwatches/js/qboColors"], function ($) {
+        //Enable proce change with Dropdown selector
+        var dataPriceBoxSelector = '[data-role=priceBox]',
+            dataProductIdSelector = '[data-product-id=10150]',
+            priceBoxes = $(dataPriceBoxSelector + dataProductIdSelector);
+
+        priceBoxes = priceBoxes.filter(function(index, elem){
+            return !$(elem).find('.price-from').length;
+        });
+        //end
+        $('.swatch-opt-10150').SwatchRenderer({
+            selectorProduct: '.product-item',
+            onlySwatches: false,
+            enableControlLabel: false,
+            numberToShow: 16,
+            jsonConfig: {"attributes":{"155":{"id":"155","code":"tamano","label":"Tama\u00f1o","options":[{"id":"215","label":"Matrimonial","position":2,"products":["10148"]},{"id":"1937","label":"King Size","position":19,"products":["10149"]}],"position":"1"}},"template":"$<%- data.price %>","optionPrices":{"10148":{"oldPrice":{"amount":"649"},"basePrice":{"amount":"649"},"finalPrice":{"amount":"649"}},"10149":{"oldPrice":{"amount":"999"},"basePrice":{"amount":"999"},"finalPrice":{"amount":"999"}}},"prices":{"oldPrice":{"amount":"649"},"basePrice":{"amount":"649"},"finalPrice":{"amount":"649"}},"productId":"10150","chooseText":"Elegir una opci\u00f3n...","images":{"10148":[{"thumb":"https:\/\/www.colchasconcord.com.mx\/media\/catalog\/product\/cache\/thumbnail\/88x116\/beff4985b56e3afdbeabfc89641a4582\/c\/s\/csek048.jpg","img":"https:\/\/www.colchasconcord.com.mx\/media\/catalog\/product\/cache\/image\/1000x1320\/e9c3970ab036de70892d86c6d221abfe\/c\/s\/csek048.jpg","full":"https:\/\/www.colchasconcord.com.mx\/media\/catalog\/product\/cache\/image\/e9c3970ab036de70892d86c6d221abfe\/c\/s\/csek048.jpg","caption":null,"position":"1","isMain":true}],"10149":[{"thumb":"https:\/\/www.colchasconcord.com.mx\/media\/catalog\/product\/cache\/thumbnail\/88x116\/beff4985b56e3afdbeabfc89641a4582\/c\/s\/csem047_1.jpg","img":"https:\/\/www.colchasconcord.com.mx\/media\/catalog\/product\/cache\/image\/1000x1320\/e9c3970ab036de70892d86c6d221abfe\/c\/s\/csem047_1.jpg","full":"https:\/\/www.colchasconcord.com.mx\/media\/catalog\/product\/cache\/image\/e9c3970ab036de70892d86c6d221abfe\/c\/s\/csem047_1.jpg","caption":null,"position":"1","isMain":true}]},"index":{"10148":{"155":"215"},"10149":{"155":"1937"}}},
+            jsonSwatchConfig: [],
+            mediaCallback: 'https://www.colchasconcord.com.mx/swatches/ajax/media/',
+            arrayOptionsProducts: '[[{"sku":"CSEM047","product_id":"10150","attribute_code":"tamano","value_index":"215","option_title":"Matrimonial","default_title":"Matrimonial","child_id":"10148"},{"sku":"CSEK048","product_id":"10150","attribute_code":"tamano","value_index":"1937","option_title":"King Size","default_title":"King Size","child_id":"10149"}]]',
+            priceBox: priceBoxes
+        });
+    });
+</script>
+<a class="weltpixel-quickview weltpixel_quickview_button_v1" data-quickview-url=https://www.colchasconcord.com.mx/weltpixel_quickview/catalog_product/view/id/10150/ href="javascript:void(0);"><span>Vista rápida</span></a>
+                                    <div class="product-item-inner">
+                                <div class="product actions product-item-actions">
+                                                                                                                                                <a href="#"
+                                                   class="action towishlist actions-secondary"
+                                                   title="Agregar a los favoritos"
+                                                   aria-label="Agregar a los favoritos"
+                                                   data-post='{"action":"https:\/\/www.colchasconcord.com.mx\/wishlist\/index\/add\/","data":{"product":"10150","uenc":"aHR0cHM6Ly93d3cuY29sY2hhc2NvbmNvcmQuY29tLm14Lw,,"}}'
+                                                   data-action="add-to-wishlist"
+                                                   role="button">
+                                                    <span>Agregar a los favoritos</span>
+                                                </a>
+                                                                                                                                                                <div class="actions-primary">
+                                                                                                    <form data-role="tocart-form" action="https://www.colchasconcord.com.mx/checkout/cart/add/uenc/aHR0cHM6Ly93d3cuY29sY2hhc2NvbmNvcmQuY29tLm14Lw,,/product/10150/" method="post">
+                                                <input type="hidden" name="product" value="10150">
+                                                <input type="hidden" name="uenc" value="aHR0cHM6Ly93d3cuY29sY2hhc2NvbmNvcmQuY29tLm14L2NoZWNrb3V0L2NhcnQvYWRkL3VlbmMvYUhSMGNITTZMeTkzZDNjdVkyOXNZMmhoYzJOdmJtTnZjbVF1WTI5dExtMTRMdywsL3Byb2R1Y3QvMTAxNTAv">
+                <input name="form_key" type="hidden" value="sAZi6AokyyKXdKug" />                                                <button type="submit"
+                                                        title="Añadir al carrito"
+                                                        class="action tocart primary">
+                                                    <span>Añadir al carrito</span>
+                                                </button>
+                                            </form>
+                                                                            </div>
+                                                                                                                                                        <a href="#"
+                                           class="action tocompare actions-secondary"
+                                           title="Añadir para comparar"
+                                           aria-label="Añadir para comparar"
+                                           data-post='{"action":"https:\/\/www.colchasconcord.com.mx\/catalog\/product_compare\/add\/","data":{"product":"10150","uenc":"aHR0cHM6Ly93d3cuY29sY2hhc2NvbmNvcmQuY29tLm14Lw,,"}}'
+                                           role="button">
+                                            <span>Añadir para comparar</span>
+                                        </a>
+                                            </div>
+                            </div>
+                            </div>
+                </div>
+                                        </div><div class="item product product-item">                <div class="product-item-info" data-container="product-grid">
+                            <div class="product photo product-item-photo">
+                                                                          <div class="container-labels-concord">
+                                                                  <img class="label-new" src="https://www.colchasconcord.com.mx/static/version1643241833/frontend/qbo/theme/es_MX/images/new_label.png">                                                            </div>
+                        
+                        <a href="https://www.colchasconcord.com.mx/cortina-decorativa-oliver" tabindex="-1">
+                            
+                            <img class="product-image-photo default_image " src="https://www.colchasconcord.com.mx/media/catalog/product/cache/thumbnail/270x270/e9c3970ab036de70892d86c6d221abfe/c/d/cdeu284.jpg" alt="Cortina decorativa Oliver"/>
+                                                    </a>
+                                                            <div class="group-details">
+                                                <strong class="product name product-item-name">
+                            <a class="product-item-link"
+                               href="https://www.colchasconcord.com.mx/cortina-decorativa-oliver">
+        Cortina decorativa Oliver                            </a>
+                        </strong>
+                                                                                                                                        <div class="product-reviews-summary short no-rating">
+    
+    <div class="rating-summary">
+        <span class="label"><span>Valoración:</span></span>
+        <div class="rating-result" title="%">
+            <span style="width:%"><span>%</span></span>
+        </div>
+    </div>
+    
+    <div class="reviews-actions">
+        <a class="action view" href="https://www.colchasconcord.com.mx/cortina-decorativa-oliver#reviews">&nbsp;<span>Reseñas</span></a>
+    </div>
+</div>
+                                                                                                                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="10151">
+    <span class="normal-price">
+        
+
+<span class="price-container price-final_price tax weee"
+        >
+        <span  id="product-price-10151"                data-price-amount="599"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+        >
+        <span class="price">$599.00</span>    </span>
+        </span>
+    </span>
+
+</div>                                            </div>
+                    </div>
+                    <div class="product details product-item-details">
+
+       
+                        <a class="weltpixel-quickview weltpixel_quickview_button_v1" data-quickview-url=https://www.colchasconcord.com.mx/weltpixel_quickview/catalog_product/view/id/10151/ href="javascript:void(0);"><span>Vista rápida</span></a>
+                                    <div class="product-item-inner">
+                                <div class="product actions product-item-actions">
+                                                                                                                                                <a href="#"
+                                                   class="action towishlist actions-secondary"
+                                                   title="Agregar a los favoritos"
+                                                   aria-label="Agregar a los favoritos"
+                                                   data-post='{"action":"https:\/\/www.colchasconcord.com.mx\/wishlist\/index\/add\/","data":{"product":"10151","uenc":"aHR0cHM6Ly93d3cuY29sY2hhc2NvbmNvcmQuY29tLm14Lw,,"}}'
+                                                   data-action="add-to-wishlist"
+                                                   role="button">
+                                                    <span>Agregar a los favoritos</span>
+                                                </a>
+                                                                                                                                                                <div class="actions-primary">
+                                                                                                    <form data-role="tocart-form" action="https://www.colchasconcord.com.mx/checkout/cart/add/uenc/aHR0cHM6Ly93d3cuY29sY2hhc2NvbmNvcmQuY29tLm14Lw,,/product/10151/" method="post">
+                                                <input type="hidden" name="product" value="10151">
+                                                <input type="hidden" name="uenc" value="aHR0cHM6Ly93d3cuY29sY2hhc2NvbmNvcmQuY29tLm14L2NoZWNrb3V0L2NhcnQvYWRkL3VlbmMvYUhSMGNITTZMeTkzZDNjdVkyOXNZMmhoYzJOdmJtTnZjbVF1WTI5dExtMTRMdywsL3Byb2R1Y3QvMTAxNTEv">
+                <input name="form_key" type="hidden" value="sAZi6AokyyKXdKug" />                                                <button type="submit"
+                                                        title="Añadir al carrito"
+                                                        class="action tocart primary">
+                                                    <span>Añadir al carrito</span>
+                                                </button>
+                                            </form>
+                                                                            </div>
+                                                                                                                                                        <a href="#"
+                                           class="action tocompare actions-secondary"
+                                           title="Añadir para comparar"
+                                           aria-label="Añadir para comparar"
+                                           data-post='{"action":"https:\/\/www.colchasconcord.com.mx\/catalog\/product_compare\/add\/","data":{"product":"10151","uenc":"aHR0cHM6Ly93d3cuY29sY2hhc2NvbmNvcmQuY29tLm14Lw,,"}}'
+                                           role="button">
+                                            <span>Añadir para comparar</span>
+                                        </a>
+                                            </div>
+                            </div>
+                            </div>
+                </div>
+                </div>            </div>
+    </div>
+            <script type="text/x-magento-init">
+            {
+            "[data-role=tocart-form], .form.map.checkout": {
+            "catalogAddToCart": {}
+            }
+            }
+        </script>
+    </div>
+    </div>
+    <script type="text/javascript" xml="space">// 
+            require([
+                'jquery',
+                'owl.carousel/owl.carousel.min'
+                ], function ($) {
+                    $("#banner-slider-demo-2").owlCarousel({
+                        items: 1,
+                        autoplay: true,
+                        autoplayTimeout: 10,
+                        autoplayHoverPause: true,
+                        dots: true,
+                        navRewind: true,
+                        animateIn: 'fadeIn',
+                        animateOut: 'fadeOut',
+                        loop: true,
+                        nav: false
+                    });
+                });
+    </script>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    <div style="padding-top: 20px;">
+    <div class="parallax-slider" style="position: relative; z-index: 3;">
+    <div class="container">
+    <div class="row">
+    
+
+    </div>
+    </div>
+    </div>
+    
+    <script type="text/javascript" xml="space">// 
+    // 
+    // 
+    // 
+    // 
+    // 
+                        require([
+                            'jquery',
+                            'owl.carousel/owl.carousel.min'
+                            ], function ($) {
+                                $("#new_product .owl-carousel").owlCarousel({
+                                    autoplay: true,
+                                    autoplayTimeout: 5000,
+                                    autoplayHoverPause: true,
+                                    loop: true,
+                                    navRewind: true,
+                                    margin: 10,
+                                    nav: true,
+                                    navText: ["<em class='porto-icon-left-open-huge'></em>","<em class='porto-icon-right-open-huge'></em>"],
+                                    dots: false,
+                                    responsive: {
+                                      0:{
+                                         items:1
+                                     },
+                                     380:{
+                                        items:1
+                                    },
+                                    480:{
+                                        items:2
+                                    },
+                                    640: {
+                                        items:2
+                                    },
+                                    768: {
+                                        items:2
+                                    },
+                                    992: {
+                                        items:4
+                                    },
+                                    1200: {
+                                        items:4
+                                    }
+                                }
+                            });
+                            });
+    // 
+    // 
+    // 
+    // 
+    // 
+    // </script>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="custom-support" style="padding: 40px;">
+    <div class="container">
+    <div class="row">
+    <div class="col-sm-4"><em class="credit-card-concord"></em>
+    <div class="content">
+    
+    <h3><a style="color: #000;" href="https://www.colchasconcord.com.mx/usos-y-cuidados">Usos y cuidados<p><H6>Ten en cuenta las siguientes recomendaciones, te garantizamos la &oacute;ptima conservaci&oacute;n y la extensa durabilidad de tus productos Concord.</H6></p></a></h3>
+    </div>
+    </div>
+    <div class="col-sm-4"><em class="business"></em>
+    <div class="content">
+    <h3><a style="color: #000;" href="https://www.colchasconcord.com.mx/concordnegocio">Inicia tu propio negocio<p><H6>Descubre el potencial del negocio que solo los #1 te podemos ofrecer</H6></p></a></h3>
+    <em></em>
+    
+    </div>
+    </div>
+    <div class="col-sm-4"><em class="manual"></em>
+    <div class="content">
+    <h3><a style="color: #000;" href="https://www.colchasconcord.com.mx/media/pdf/Manual202202.pdf"  target="_blank" > Capacitaci&oacute;n y ventas <p><H6>Este sencillo manual te servirá de gu&iacute;a y te llevará paso a paso a lograr r&aacute;pidamente tus objetivos.<H6></p></a></h3>
+    <em></em>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="parallax-wrapper" style="margin: 50px 0;">
+    <div class="overlay overlay-color" style="background-color: #000000; opacity: 0.59; filter: alpha(opacity=75);"></div>
+    <div class="parallax" style="background-image: url('https://www.colchasconcord.com.mx/media/wysiwyg/fondo2.jpeg');" data-stellar-background-ratio="0.5">
+    <div class="parallax-slider" style="position: relative; z-index: 3;">
+    <div class="container">
+    <div id="parallax-slider-demo-1" class="owl-carousel">
+    <div class="item">
+    <h2 style="font-weight: 600;">&iexcl; Viste de alegr&iacute;a tu casa !<b style="font-weight: 800;"></b></h2>
+    <p style="font-weight: 300;"></p>
+    <a style="font-weight: 300;" href="https://www.colchasconcord.com.mx/recamara/colchas">Conoce más ahora &rarr;</a></div>
+    <div class="item">
+    <h2 style="font-weight: 600;">&iexcl; Somos los #1 !<b style="font-weight: 800;"></b></h2>
+    <p style="font-weight: 300;"></p>
+    <a style="font-weight: 300;" href="https://www.colchasconcord.com.mx/nuestra-cultura-organizacional">Conoce más ahora &rarr; </a></div>
+    
+    </div>
+    </div>
+    <script type="text/javascript" xml="space">// 
+    // 
+    // 
+    // 
+    // 
+    // 
+                require([
+                    'jquery',
+                    'owl.carousel/owl.carousel.min'
+                    ], function ($) {
+                        $("#parallax-slider-demo-1").owlCarousel({
+                            items: 1,
+                            autoplay: true,
+                            autoplayTimeout: 5000,
+                            autoplayHoverPause: true,
+                            dots: true,
+                            nav: false,
+                            loop: true,
+                            navRewind: true
+                        });
+                    });
+                
+    // 
+    // 
+    // 
+    // 
+    // 
+    // </script>
+    </div>
+    </div>
+    </div>
+<main id="maincontent" class="page-main"><a id="contentarea" tabindex="-1"></a>
+<div class="columns"><div class="column main"><input name="form_key" type="hidden" value="sAZi6AokyyKXdKug" /><div id="authenticationPopup" data-bind="scope:'authenticationPopup'" style="display: none;">
+    <script>
+        window.authenticationPopup = {"customerRegisterUrl":"https:\/\/www.colchasconcord.com.mx\/customer\/account\/create\/","customerForgotPasswordUrl":"https:\/\/www.colchasconcord.com.mx\/customer\/account\/forgotpassword\/","baseUrl":"https:\/\/www.colchasconcord.com.mx\/"};
+    </script>
+    <!-- ko template: getTemplate() --><!-- /ko -->
+    <script type="text/x-magento-init">
+        {
+            "#authenticationPopup": {
+                "Magento_Ui/js/core/app": {"components":{"authenticationPopup":{"component":"Magento_Customer\/js\/view\/authentication-popup","children":{"messages":{"component":"Magento_Ui\/js\/view\/messages","displayArea":"messages"},"captcha":{"component":"Magento_Captcha\/js\/view\/checkout\/loginCaptcha","displayArea":"additional-login-form-fields","formId":"user_login","configSource":"checkout"},"social-buttons":{"component":"Mageplaza_SocialLogin\/js\/view\/social-buttons","displayArea":"before"}}}}}            },
+            "*": {
+                "Magento_Ui/js/block-loader": "https://www.colchasconcord.com.mx/static/version1643241833/frontend/qbo/theme/es_MX/images/loader-1.gif"
+            }
+        }
+    </script>
+</div>
+<script type="text/x-magento-init">
+{"*":{"Magento_Customer\/js\/section-config":{"sections":{"stores\/store\/switch":"*","directory\/currency\/switch":"*","*":["messages"],"customer\/account\/logout":"*","customer\/account\/loginpost":["credit"],"customer\/account\/createpost":["credit"],"customer\/ajax\/login":["checkout-data","cart","credit","activatelink","groupdropdown"],"catalog\/product_compare\/add":["compare-products"],"catalog\/product_compare\/remove":["compare-products"],"catalog\/product_compare\/clear":["compare-products"],"sales\/guest\/reorder":["cart"],"sales\/order\/reorder":["cart"],"checkout\/cart\/add":["cart"],"checkout\/cart\/delete":["cart"],"checkout\/cart\/updatepost":["cart"],"checkout\/cart\/updateitemoptions":["cart"],"checkout\/cart\/couponpost":["cart"],"checkout\/cart\/estimatepost":["cart"],"checkout\/cart\/estimateupdatepost":["cart"],"checkout\/onepage\/saveorder":["cart","checkout-data","last-ordered-items","credit"],"checkout\/sidebar\/removeitem":["cart"],"checkout\/sidebar\/updateitemqty":["cart"],"rest\/*\/v1\/carts\/*\/payment-information":["cart","checkout-data","last-ordered-items"],"rest\/*\/v1\/guest-carts\/*\/payment-information":["cart","checkout-data"],"rest\/*\/v1\/guest-carts\/*\/selected-payment-method":["cart","checkout-data"],"rest\/*\/v1\/carts\/*\/selected-payment-method":["cart","checkout-data"],"multishipping\/checkout\/overviewpost":["cart"],"glace_freegift\/cart\/add":["cart"],"paypal\/express\/placeorder":["cart","checkout-data"],"paypal\/payflowexpress\/placeorder":["cart","checkout-data"],"review\/product\/post":["review"],"authorizenet\/directpost_payment\/place":["cart","checkout-data"],"braintree\/paypal\/placeorder":["cart","checkout-data"],"wishlist\/index\/add":["wishlist"],"wishlist\/index\/remove":["wishlist"],"wishlist\/index\/updateitemoptions":["wishlist"],"wishlist\/index\/update":["wishlist"],"wishlist\/index\/cart":["wishlist","cart"],"wishlist\/index\/fromcart":["wishlist","cart"],"wishlist\/index\/allcart":["wishlist","cart"],"wishlist\/shared\/allcart":["wishlist","cart"],"wishlist\/shared\/cart":["cart"],"sociallogin\/popup\/create":["checkout-data","cart"],"pslogin\/account\/loginpost":"*","customer\/address\/formpost":["cart","checkout-data"],"bundleproducts\/index\/updatecart":["cart"],"weltpixel_quickview\/index\/updatecart":["cart"]},"clientSideSections":["checkout-data"],"baseUrls":["https:\/\/www.colchasconcord.com.mx\/"]}}}</script>
+<script type="text/x-magento-init">
+{"*":{"Magento_Customer\/js\/customer-data":{"sectionLoadUrl":"https:\/\/www.colchasconcord.com.mx\/customer\/section\/load\/","cookieLifeTime":"86000","updateSessionUrl":"https:\/\/www.colchasconcord.com.mx\/customer\/account\/updateSession\/"}}}</script>
+<script type="text/x-magento-init">
+    {
+        "body": {
+            "pageCache": {"url":"https:\/\/www.colchasconcord.com.mx\/page_cache\/block\/render\/","handles":["default","cms_index_index","cms_page_view","cms_index_index_id_porto_home_2"],"originalRequest":{"route":"cms","controller":"index","action":"index","uri":"\/"},"versionCookieName":"private_content_version"}        }
+    }
+</script>
+<span data-mage-init='{"emailCapture": {"url": "https://www.colchasconcord.com.mx/event/action/capture/"}}'></span><link rel="stylesheet" type="text/css" href="https://www.colchasconcord.com.mx/static/version1643241833/frontend/qbo/theme/es_MX/Qbo_BundleProducts/css/bundle.min.css">
+<div id="bundle-modal" style="display:none">
+    <iframe id="frame" src="" width="100%" height="600px">
+    </iframe>
+</div><script type="application/ld+json">
+{
+   "@context": "http://schema.org",
+   "@type": "WebSite",
+   "url": "https://www.colchasconcord.com.mx/",
+   "potentialAction": {
+     "@type": "SearchAction",
+     "target": "https://www.colchasconcord.com.mx/catalogsearch/result/index/?q={search_term_string}",
+     "query-input": "required name=search_term_string"
+   }
+}
+</script>
+<h2 class="filterproduct-title" style="margin: 0 0 10px;"><span class="content"><strong>Nuestras licencias</strong></span></h2>
+<div id="brands-slider-demo-1" class="brands-slider">
+<div class="owl-carousel">
+<div class="item" style="padding-top: 10px;"><a href="https://www.colchasconcord.com.mx/catalogsearch/result/?q=avengers"> <img src="https://www.colchasconcord.com.mx/media/wysiwyg/qbo/brands/New/AVENGERS.png" alt="" /> </a></div>
+
+<div class="item" style="padding-top: 10px;"><a href="https://www.colchasconcord.com.mx/catalogsearch/result/?q=Kung+Fu+Panda"> <img src="https://www.colchasconcord.com.mx/media/wysiwyg/qbo/brands/New/BABYDREAMWORKS.png" alt="" /> </a></div>
+
+<div class="item" style="padding-top: 10px;"><a href="https://www.colchasconcord.com.mx/catalogsearch/result/?q=Barbie"> <img src="https://www.colchasconcord.com.mx/media/wysiwyg/qbo/brands/New/BARBIE.png" alt="" /> </a></div>
+
+<div class="item" style="padding-top: 10px;"><a href="https://www.colchasconcord.com.mx/catalogsearch/result/?q=cars"> <img src="https://www.colchasconcord.com.mx/media/wysiwyg/qbo/brands/New/CARS.png" alt="" /> </a></div>
+
+<div class="item" style="padding-top: 10px;"><a href="https://www.colchasconcord.com.mx/catalogsearch/result/?q=dragon+ball"> <img src="https://www.colchasconcord.com.mx/media/wysiwyg/qbo/brands/New/DRAGONBALL.png" alt="" /> </a></div>
+
+<div class="item" style="padding-top: 10px;"><a href="https://www.colchasconcord.com.mx/catalogsearch/result/?q=efriends"> <img src="https://www.colchasconcord.com.mx/media/wysiwyg/qbo/brands/New/EFRIENDS.png" alt="" /> </a></div>
+
+<!-- <div class="item" style="padding-top: 10px;"><a href="https://www.colchasconcord.com.mx/catalogsearch/result/?q=frozen+2"> <img src="https://www.colchasconcord.com.mx/media/wysiwyg/qbo/brands/New/frozen2.png" alt="" /> </a></div> -->
+
+<div class="item" style="padding-top: 10px;"><a href="https://www.colchasconcord.com.mx/catalogsearch/result/?q=hot+wheels"> <img src="https://www.colchasconcord.com.mx/media/wysiwyg/qbo/brands/New/HOTWHEELS.png" alt="" /> </a></div>
+
+<div class="item" style="padding-top: 10px;"><a href="https://www.colchasconcord.com.mx/catalogsearch/result/?q=hot+wheels+monster+trucks"> <img src="https://www.colchasconcord.com.mx/media/wysiwyg/qbo/brands/New/HWMONSTERTRUCKS.png" alt="" /> </a></div>
+
+<div class="item" style="padding-top: 10px;"><a href="https://www.colchasconcord.com.mx/catalogsearch/result/?q=mickey"> <img src="https://www.colchasconcord.com.mx/media/wysiwyg/qbo/brands/New/MICKEYMOUSE.png" alt="" /> </a></div>
+
+<div class="item" style="padding-top: 10px;"><a href="https://www.colchasconcord.com.mx/catalogsearch/result/?q=MICKEY+AND+FRIENDS"> <img src="https://www.colchasconcord.com.mx/media/wysiwyg/qbo/brands/New/MICKEYYAMIGOS.png" alt="" /> </a></div>
+
+<div class="items2" style="padding-top: 10px;"><a href="https://www.colchasconcord.com.mx/catalogsearch/result/?q=minions"> <img src="https://www.colchasconcord.com.mx/media/wysiwyg/qbo/brands/New/MINIONS.png" alt="" /> </a></div>
+
+<div class="item" style="padding-top: 10px;"><a href="https://www.colchasconcord.com.mx/catalogsearch/result/?q=minnie"> <img src="https://www.colchasconcord.com.mx/media/wysiwyg/qbo/brands/New/MINNIEMOUSE.png" alt="" /> </a></div>
+
+<div class="item" style="padding-top: 10px;"><a href="https://www.colchasconcord.com.mx/catalogsearch/result/?q=snoopy"> <img src="https://www.colchasconcord.com.mx/media/wysiwyg/qbo/brands/New/SNOOPY.png" alt="" /> </a></div>
+
+<!--<div class="item" style="padding-top: 10px;"><a href="https://www.colchasconcord.com.mx/catalogsearch/result/?q=Lady+bug"> <img src="https://www.colchasconcord.com.mx/media/wysiwyg/qbo/brands/New/miraculous.png" alt="" /> </a></div>-->
+
+<div class="item" style="padding-top: 10px;"><a href="https://www.colchasconcord.com.mx/catalogsearch/result/index/?q=Princess+disney"> <img src="https://www.colchasconcord.com.mx/media/wysiwyg/qbo/brands/New/PRINCESA.png" alt="" /> </a></div>
+
+<div class="item" style="padding-top: 10px;"><a href="https://www.colchasconcord.com.mx/catalogsearch/result/?q=disney"> <img src="https://www.colchasconcord.com.mx/media/wysiwyg/qbo/brands/New/DISNEY.png" alt="" /> </a></div>
+
+
+<div class="item" style="padding-top: 10px;"><a href="https://www.colchasconcord.com.mx/catalogsearch/result/?q=spider-man"> <img src="https://www.colchasconcord.com.mx/media/wysiwyg/qbo/brands/New/SPIDERMAN1.png" alt="" /> </a></div>
+
+<div class="item" style="padding-top: 10px;"><a href="https://www.colchasconcord.com.mx/catalogsearch/result/?q=spidey"> <img src="https://www.colchasconcord.com.mx/media/wysiwyg/qbo/brands/New/SPIDEY.png" alt="" /> </a></div>
+
+
+<div class="item" style="padding-top: 10px;"><a href="https://www.colchasconcord.com.mx/catalogsearch/result/?q=Stitch"> <img src="https://www.colchasconcord.com.mx/media/wysiwyg/qbo/brands/New/STICH.png" alt="" /> </a></div>
+
+<div class="item" style="padding-top: 10px;"><a href="https://www.colchasconcord.com.mx/catalogsearch/result/?q=toy+story"> <img src="https://www.colchasconcord.com.mx/media/wysiwyg/qbo/brands/New/TOYSTORY.png" alt="" /> </a></div>
+
+
+<div class="item" style="padding-top: 10px;"><a href="https://www.colchasconcord.com.mx/catalogsearch/result/?q=star+wars"> <img src="https://www.colchasconcord.com.mx/media/wysiwyg/qbo/brands/New/STARWARS.png" alt="" /> </a></div>
+
+<div class="item" style="padding-top: 10px;"><a href="https://www.colchasconcord.com.mx/catalogsearch/result/?q=mandalorian"> <img src="https://www.colchasconcord.com.mx/media/wysiwyg/qbo/brands/New/MANDALORIAN.png" alt="" /> </a></div>
+
+
+<div class="item" style="padding-top: 10px;"><a href="https://www.colchasconcord.com.mx/catalogsearch/result/?q=tinker+bell"> <img src="https://www.colchasconcord.com.mx/media/wysiwyg/qbo/brands/New/TINKERBELL.png" alt="" /> </a></div>
+
+
+<div class="item" style="padding-top: 10px;"><a href="https://www.colchasconcord.com.mx/catalogsearch/result/?q=trolls"> <img src="https://www.colchasconcord.com.mx/media/wysiwyg/qbo/brands/New/TROLLS.png" alt="" /> </a></div>
+
+</div>
+
+<script type="text/javascript" xml="space">// 
+        require([
+            'jquery',
+            'owl.carousel/owl.carousel.min'
+        ], function ($) {
+            $("#brands-slider-demo-1 .owl-carousel").owlCarousel({
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                margin: 30,
+                nav: false,
+                dots: true,
+                loop: true,
+                responsive: {
+                    0: {
+                        items:2
+                    },
+                    640: {
+                        items:3
+                    },
+                    768: {
+                        items:4
+                    },
+                    992: {
+                        items:5
+                    },
+                    1200: {
+                        items:6
+                    }
+                }
+            });
+        });
+    
+// </script>
+</div>
+<h2 class="filterproduct-title" style="margin-top: 40px; margin-bottom: 5px;"><span class="content"><strong>Desde el blog</strong></span></h2>
+<div id="latest_news" class="owl-top-narrow">
+<div class="recent-posts">
+    <div class="owl-carousel">
+                <div class="item">
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="post-image">
+                                            <img src="https://www.colchasconcord.com.mx/media/magefan_blog/tips-blogs-principal.png" alt=""/>
+                                        </div>
+                </div>
+                <div class="col-sm-7">
+                    <div class="post-date">
+                        <span class="day">17</span>
+                        <span class="month">Feb</span>
+                    </div>
+                    <div class="postTitle">
+                        <h2><a href="https://www.colchasconcord.com.mx/blog/post/10-consejos-para-reducir-el-estres/" >10 Consejos para reducir el estrés.</a></h2>
+                    </div>
+                                        <div class="postContent"><title>10 Consejos para reducir el estrés.</title>
+
+<style type="text/css" xml="space">
+    .concord {
+        text-align: justify;
+    }
+</style>
+<h5>¡DESESTRÉSATE!</h5>
+<div class="concord">
+    <p>
+        El estrés afecta a muchas personas hoy en día y suele ser complejo, ya que se presenta principalmente en el entorno laboral. En él entran en juego diversas variables, ya sea el puesto laboral o la organización. También influye mucho el comportamiento
+        del individuo, así como sus expectativas o capacidades para afrontar situaciones complejas.
+    </p>
+    <br>
+   <img src="https://www.colchasconcord.com.mx/media/wysiwyg/wysiwyg/Blog/tips-blog-mini.png" alt="" />
+    <br>
+    <br>
+    <p>
+        Los principales síntomas para identificar que estamos en un cuadro de estrés son:
+    </p>
+    <ul>
+        <li>Ansiedad y agitación.</li>
+        <li>Falta de concentración en el trabajo o en tareas cotidianas.</li>
+        <li>Exceso de preocupación y saturación mental.</li>
+        <li>Dificultad para tomar decisiones.</li>
+        <li>Mal humor e irritabilidad.</li>
+    </ul>
+    <br>
+    <p>En el blog de hoy te vamos a dar 10 consejos para reducir el estrés y aprovechar tu día ¡al máximo!</p>
+    <br>
+    <ol>
+        <li>Gestiona tu tiempo de manera eficaz.</li>
+        <li>Busca una <a href="https://www.colchasconcord.com.mx/cuellera-automoldeable-de-bambu">cuellera</a> que te dé un buen soporte.</li>
+        <li>Practica yoga, preferentemente en una habitación completamente <a href="https://www.colchasconcord.com.mx/cortina-larga-translucida-blanca">blanca</a>.</li>
+        <li>Trata de mantener una alimentación saludable.</li>
+        <li>Llénate de buen humor y deja que las risas iluminen tus días.</li>
+        <li>Renueva tu colchón y hazlo más <a href="https://www.colchasconcord.com.mx/protector-ortopedico-capitonado">cómodo</a>.</li>
+        <li>¡Cambia de <a href="https://www.colchasconcord.com.mx/almohada-con-imanes-antiestres">almohada</a>!</li>
+        <li>Apóyate de productos <a href="https://www.colchasconcord.com.mx/cubrecolchon-super-confort-matrimonial-con-imanes">antiestrés</a>.
+        </li>
+        <li>Disfruta de buena música mientras realizas tus actividades.</li>
+        <li>¡Tómate un break! Consiéntete con una peli y una <a href="https://www.colchasconcord.com.mx/recamara/cobertores/frazadas">frazada</a>.</li>
+    </ol>
+    <p>
+        Recuerda que la familia Concord siempre está pensando en tu bienestar y en el de los que más quieres, por lo que trabajamos día con día innovando con productos increíbles que cubran tus necesidades. Espero te haya gustado este artículo, ¡nos vemos en
+        el siguiente blog!
+    </p>
+    <br />
+    <b>Por: Abril Díaz Gálvez.</b>
+</div></div>
+                    <a class="readmore" href="https://www.colchasconcord.com.mx/blog/post/10-consejos-para-reducir-el-estres/">Ver más ></a>
+                </div>
+            </div>
+        </div>
+                <div class="item">
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="post-image">
+                                            <img src="https://www.colchasconcord.com.mx/media/magefan_blog/blog-mini-renovar_.png" alt=""/>
+                                        </div>
+                </div>
+                <div class="col-sm-7">
+                    <div class="post-date">
+                        <span class="day">25</span>
+                        <span class="month">Jan</span>
+                    </div>
+                    <div class="postTitle">
+                        <h2><a href="https://www.colchasconcord.com.mx/blog/post/ponte-a-la-moda-con-concord/" >¡PONTE A LA MODA CON CONCORD!</a></h2>
+                    </div>
+                                        <div class="postContent"><title>¡PONTE A LA MODA CON CONCORD!</title>
+
+<style type="text/css" xml="space">
+    .concord {
+        text-align: justify;
+    }
+</style>
+<h5>¡Es momento de renovar con estilo!</h5>
+<div class="concord">
+    <p>
+        La llegada de un nuevo año siempre trae consigo nuevos propósitos, nuevas metas y una gran renovación en diversos aspectos. En Concord, queremos invitarte a empezar por renovar tu lugar especial, es decir, tu habitación. Para ello, debes empezar por depurar
+        para poder ordenar y reacomodar teniendo así una decoración completamente diferente que te haga sentir muy cómoda (o) en tu lugar favorito. Es por eso que hoy te presentamos las tendencias de color 2022, deja atrás los tonos neutros y discretos
+        para apostar por aquellos más vibrantes.
+    </p>
+    <br>
+   <img src="https://www.colchasconcord.com.mx/media/wysiwyg/wysiwyg/Blog/blog-prin-renovar_3_.png" alt="" />
+<!--<img src="https://www.colchasconcord.com.mx/media/wysiwyg/wysiwyg/Blog/blog-prin-renovar_2_.png" alt="" />-->
+    <br>
+    <br>
+    <p>
+        Optimismo, creatividad, renovación y crecimiento son algunos de los conceptos que buscan expresar las tonalidades que reinarán durante este año. Estas las podrás incluir principalmente en tu ropa de cama y otros artículos para completar tu decoración
+        como cortinas o cojines.
+    </p>
+    <p>
+        Hace poco tiempo Pantone dictó sentencia al señalar que <a href="https://www.colchasconcord.com.mx/catalogsearch/result/index/?p=1&q=lila">Very Pery</a> será el color del año 2022, en el cual, el <a href="https://www.colchasconcord.com.mx/catalogsearch/result/index/?p=1&q=rosa">Rosa</a>        también sigue estando de moda al igual que el <a href="https://www.colchasconcord.com.mx/catalogsearch/result/?q=Naranja">Tangerine</a>.
+    </p>
+    <br>
+    <p>
+        Puedes empezar por darle una nueva vista a tu ventana, ya sea que disfrutes de tener una <a href="https://www.colchasconcord.com.mx/ventana-discreta-lirios">ventana discreta</a> y permitir el paso completo de la luz o usar una <a href="https://www.colchasconcord.com.mx/cortina-decorativa-francesa">cortina decorativa</a>,
+        que le dará una vista espectacular a tus ventanales. No olvides que un gran día, comienza con un gran descanso, y para ello, debes empezar con un juego de sábanas, ya sea que las prefieras <a href="https://www.colchasconcord.com.mx/protector-de-borrega-fiusha">calientitas</a>        o <a href="https://www.colchasconcord.com.mx/juego-de-sabanas-keisha">frescas</a>, <a href="https://www.colchasconcord.com.mx/juego-de-sabanas-evelyn-individual">estampadas</a> o <a href="https://www.colchasconcord.com.mx/juego-de-sabanas-suavitec-concord">lisas</a>.
+        Seguido de eso, elegiremos al protagonista de tu cama, ya sea que prefieras un <a href="https://www.colchasconcord.com.mx/edredon-lavable-con-fundas-keisha">edredón</a>, un <a href="https://www.colchasconcord.com.mx/edredon-neo-terra">edredón ligero</a>        o algo más calientito como un <a href="https://www.colchasconcord.com.mx/cobertor-ozzy-calientito-bengala">cobertor</a> y por último, algo para completar tu nueva decoración, los <a href="https://www.colchasconcord.com.mx/par-de-cojines-decorativos-stella">cojines</a>.
+    </p>
+    <br>
+    <p>
+        Pero esto no termina aquí, el estilo lo debes llevar a todos lados, y para eso te recomendamos una hermosa <a href="https://www.colchasconcord.com.mx/frazada-ultrasuave-shining">frazada</a>, que gracias a su ligereza podrás guardar en donde sea.
+        Elige la que más te guste, ya sea <a href="https://www.colchasconcord.com.mx/frazadas-ultrasuaves-de-color">lisa</a> o <a href="https://www.colchasconcord.com.mx/frazada-ultrasuave-mali">estampada</a>.
+    </p>
+    <br>
+    <p>
+        No dejes de brillar a donde quiera que vayas y recuerda ¡ponerte a la moda solo con <a href="https://www.colchasconcord.com.mx">Concord</a>!
+    </p>
+    <br>
+    <p>
+        ¡Nos vemos en el siguiente blog!
+    </p>
+    <br />
+    <b>Por: Abril Díaz Gálvez.</b>
+</div></div>
+                    <a class="readmore" href="https://www.colchasconcord.com.mx/blog/post/ponte-a-la-moda-con-concord/">Ver más ></a>
+                </div>
+            </div>
+        </div>
+                <div class="item">
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="post-image">
+                                            <img src="https://www.colchasconcord.com.mx/media/magefan_blog/reyes-blog-mini.png" alt=""/>
+                                        </div>
+                </div>
+                <div class="col-sm-7">
+                    <div class="post-date">
+                        <span class="day">4</span>
+                        <span class="month">Jan</span>
+                    </div>
+                    <div class="postTitle">
+                        <h2><a href="https://www.colchasconcord.com.mx/blog/post/dia-de-reyes/" >DÍA DE REYES</a></h2>
+                    </div>
+                                        <div class="postContent"><title>DÍA DE REYES</title>
+
+<style type="text/css" xml="space">
+    .concord {
+        text-align: justify;
+    }
+</style>
+<h5>¡Los Reyes Magos llegaron a Concord!</h5>
+<div class="concord">
+    <p>
+        Según los historiadores, los Reyes Magos aparecieron en México desde mediados del siglo XX y rápidamente se volvieron una tradición. Esta es muy arraigada a la religión católica pero, ¿realmente sabes cómo celebran los mexicanos este gran día? ¡Ponte cómodo y lee con atención!
+    </p>
+    <br>
+    <img src="https://www.colchasconcord.com.mx/media/wysiwyg/wysiwyg/Blog/reyes-blog-mini.png" alt="" width="790" height="273" />
+    <br>
+    <br>
+    <p>
+        En México los niños escriben cartas para pedir regalos a cambio de su buena conducta durante todo el año. Los
+        Reyes Magos hacen su aparición la noche del día 5 y a las primeras horas del 6 de enero, y según la tradición,
+        hacen aparecer los regalos "por arte de magia" junto a los zapatos de los niños, quienes al despertar puedan disfrutar de sus lindos obsequios y comer la tradicional rosca de Reyes junto con su familia.
+    </p>
+    <p>
+        Es por eso, que la familia Concord quiere ayudar a los Reyes Magos a encontrar el regalo perfecto para los
+        pequeñines del hogar. Recuerda que lo mejor para empezar un nuevo año es, renovar tu habitación y dar acceso a
+        nuevas vibras. Consiéntelos como nunca antes con un fabuloso <a
+            href="https://www.colchasconcord.com.mx/recamara/cojines/microperlas">cojín de microperlas</a> que lo podrá
+        acompañar a todos lados, elige el regalo ideal de su personaje favorito como <a
+            href="https://www.colchasconcord.com.mx/catalogsearch/result/?q=minnie">Minnie Mouse</a>, <a
+            href="https://www.colchasconcord.com.mx/catalogsearch/result/index/?q=Princess+disney">Disney Princesa</a>,
+        <a href="https://www.colchasconcord.com.mx/catalogsearch/result/?q=toy+story">Toy Story</a>, <a
+            href="https://www.colchasconcord.com.mx/catalogsearch/result/?q=cars">Cars</a>, y muchísimas más.
+    </p>
+
+    <p>
+        No olvides que encontrarás gran variedad de increíbles productos, ¡solo en Concord!
+    </p>
+
+    <p>
+        ¡Nos vemos en el siguiente blog!
+    </p>
+    <br />
+    <b>Por: Abril Díaz Gálvez.</b>
+</div></div>
+                    <a class="readmore" href="https://www.colchasconcord.com.mx/blog/post/dia-de-reyes/">Ver más ></a>
+                </div>
+            </div>
+        </div>
+                <div class="item">
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="post-image">
+                                            <img src="https://www.colchasconcord.com.mx/media/magefan_blog/blog-mini-flan.png" alt=""/>
+                                        </div>
+                </div>
+                <div class="col-sm-7">
+                    <div class="post-date">
+                        <span class="day">15</span>
+                        <span class="month">Dec</span>
+                    </div>
+                    <div class="postTitle">
+                        <h2><a href="https://www.colchasconcord.com.mx/blog/post/postre-para-compartir-en-epocas-decembrinas/" >Postre para compartir en épocas decembrinas.</a></h2>
+                    </div>
+                                        <div class="postContent"><title>Postre para compartir en épocas decembrinas.</title>
+
+<p id="fl">Flan de tres leches.</p>
+<br />
+<div>
+  <p>
+    Después de dos años tan difíciles para el mundo entero, como lo indica el
+    semáforo epidemiológico; esta Navidad podremos volver a reunirnos con
+    nuestros seres queridos, claro, llevando a cabo todas las medidas básicas de
+    prevención.
+  </p>
+  <br />
+  <p>
+    Es por eso, que hoy queremos compartirte una magnífica y fácil receta para
+    compartir con tu familia.
+  </p>
+
+  <p>¡Corre por los ingredientes!</p>
+  <!-- COLOCAR IMAGEN-->
+<img src="https://www.colchasconcord.com.mx/media/wysiwyg/wysiwyg/blog-prin-flan.png" width="100%" alt="" />
+  <br />
+  <p>Para ocho porciones necesitas:</p>
+  <li>8 yemas de huevo.</li>
+  <li>2 huevos enteros.</li>
+  <li>20g de azúcar.</li>
+  <li>360g de leche condensada.</li>
+  <li>420g de leche evaporada.</li>
+  <li>250g de leche entera.</li>
+  <li>Caramelo líquido al gusto.</li>
+  <br /><br />
+  <ol>
+    <li>
+      Cubrimos la base de cada vasito con una fina capa de caramelo líquido y
+      reservamos. Encendemos el horno a 160ºC con calor arriba y abajo. Vertimos
+      agua en un recipiente hasta la mitad y lo metemos al horno hasta que esté
+      en ebullición.
+    </li>
+    <li>
+      En un recipiente amplio y hondo mezclamos las yemas, los huevos y el
+      azúcar, sin batir en exceso para no incorporar aire. Añadimos los tres
+      tipos de leche y removemos de nuevo hasta incorporar.
+    </li>
+    <li>
+      Rellenamos los vasitos con la mezcla y cubrimos cada uno de ellos con
+      papel de aluminio. Los ponemos a baño María en el recipiente que tenemos
+      dentro del horno y programamos 45 minutos.
+    </li>
+    <li>
+      Transcurrido este tiempo apagamos el horno, retiramos el recipiente con
+      los vasitos y dejamos que se enfríen en su interior, dentro del agua.
+      Posteriormente, los guardamos en la nevera hasta el momento de servir.
+      Como tip, siempre es mejor de un día para otro.
+    </li>
+  </ol>
+
+  <br />
+  <p>
+    Te recomendamos tener la decoración navideña en cada rincón de tu hogar,
+    para recibir a tus familiares con la mejor vibra y brindarles la calidez que
+    tanto han añorado. Puedes empezar por tu
+    <a href="https://www.colchasconcord.com.mx/set-de-cocina-cristmas"
+      >set de cocina</a
+    >, continuar con el
+    <a href="https://www.colchasconcord.com.mx/mantel-rectangular-noche-buena"
+      >comedor</a
+    >, las
+    <a href="https://www.colchasconcord.com.mx/cojin-de-silla-cristmas"
+      >sillas</a
+    >, seguido por la
+    <a href="https://www.colchasconcord.com.mx/set-de-cojines-decorativos-snow"
+      >sala de estar</a
+    >, el
+    <a href="https://www.colchasconcord.com.mx/juego-de-ba-o-reno">sanitario</a>
+    y terminar con las
+    <a href="https://www.colchasconcord.com.mx/cobertor-pachicalientito-noel-v2"
+      >habitaciones</a
+    >.
+  </p>
+  <p>
+    No olvides abrazar muy fuerte a esa persona especial y expresarle cuán
+    importante es en tu vida.<br />¡Nos vemos en el siguiente blog!
+  </p>
+  <br />
+  <b>Por: Abril Díaz Gálvez.</b>
+</div>
+
+<style type="text/css" xml="space">
+  .concord {
+    text-align: justify;
+  }
+
+  #fl {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 20;
+  }
+</style>
+</div>
+                    <a class="readmore" href="https://www.colchasconcord.com.mx/blog/post/postre-para-compartir-en-epocas-decembrinas/">Ver más ></a>
+                </div>
+            </div>
+        </div>
+                <div class="item">
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="post-image">
+                                            <img src="https://www.colchasconcord.com.mx/media/magefan_blog/blog-mini-epoca_1_.png" alt=""/>
+                                        </div>
+                </div>
+                <div class="col-sm-7">
+                    <div class="post-date">
+                        <span class="day">7</span>
+                        <span class="month">Dec</span>
+                    </div>
+                    <div class="postTitle">
+                        <h2><a href="https://www.colchasconcord.com.mx/blog/post/la-mejor-epoca-del-anio/" >¡LA MEJOR ÉPOCA DEL AÑO!</a></h2>
+                    </div>
+                                        <div class="postContent"><title>¡LA MEJOR ÉPOCA DEL AÑO!</title>
+
+<style type="text/css" xml="space">
+  .concord {
+    text-align: justify;
+  }
+</style>
+
+<h5>¡La navidad ha llegado a Concord!</h5>
+ <div align="center"><span>
+
+</span></div>
+<div class="concord">
+  <p>
+    La navidad es una de las fechas más esperadas del año, pues compartimos ese
+    gran día con nuestros familiares y seres queridos. Lo que tal vez no sabes
+    es, que los auténticos colores de navidad encierran un profundo significado
+    que hoy, vamos a contarte.
+  </p>
+<img src="https://www.colchasconcord.com.mx/media/wysiwyg/wysiwyg/blog-prin-epoca_1_.png" alt="" width="790" height="273"/>
+  <p>
+    El color rojo, representa el amor y la calidez del hogar. El verde, expresa
+    la esperanza y la nueva vida. El blanco evoca la pureza, la alegría, la fe y
+    la iluminación, mientras que la tonalidad dorada indica prosperidad y
+    riqueza.
+  </p>
+
+  <p>
+    Es por eso que en <a href="https://www.colchasconcord.com.mx">Concord</a>,
+    queremos acompañarte en la mejor época del año con una línea de productos
+    exclusivos como son, hermosas
+    <a href="https://www.colchasconcord.com.mx/cortina-decorativa-christmas"
+      >cortinas decorativas</a
+    >
+    para tu habitación o sala,
+    <a href="https://www.colchasconcord.com.mx/cortina-de-cocina-c-belen"
+      >cortina de cocina</a
+    >
+    que te cautivará, edredones súper calientitos, increíbles
+    <a href="https://www.colchasconcord.com.mx/par-de-cojines-christmas"
+      >cojines decorativos</a
+    >
+    que darán el toque especial en cada rincón de tu hogar y lo que por nada del
+    mundo puede faltar, el
+    <a href="https://www.colchasconcord.com.mx/pie-de-arbol-navide-o"
+      >pie de árbol</a
+    >
+    con diseño único e inigualable. ¡Corre por ellos! Y no olvides, que
+    <a href="https://www.colchasconcord.com.mx">Concord</a> y una servidora te
+    deseamos felices fiestas, pero sobre todo, salud, mucho amor, paz y
+    prosperidad. ¡Nos vemos en el siguiente blog!
+  </p>
+  <br />
+</div>
+
+<b>Por: Abril Díaz Gálvez.</b>
+</div>
+                    <a class="readmore" href="https://www.colchasconcord.com.mx/blog/post/la-mejor-epoca-del-anio/">Ver más ></a>
+                </div>
+            </div>
+        </div>
+                <div class="item">
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="post-image">
+                                            <img src="https://www.colchasconcord.com.mx/media/magefan_blog/blog-mini-dia-mujer.png" alt=""/>
+                                        </div>
+                </div>
+                <div class="col-sm-7">
+                    <div class="post-date">
+                        <span class="day">25</span>
+                        <span class="month">Nov</span>
+                    </div>
+                    <div class="postTitle">
+                        <h2><a href="https://www.colchasconcord.com.mx/blog/post/no-estas-sola/" >¡NO ESTÁS SOLA!</a></h2>
+                    </div>
+                                        <div class="postContent"><title>¡NO ESTÁS SOLA!</title>
+
+<style type="text/css" xml="space">
+  .concord {
+    text-align: justify;
+  }
+</style>
+
+<h5>Día mundial contra la violencia hacia la mujer.</h5>
+<br>
+
+<br>
+<div class="concord">
+  <p>
+    Hoy queremos reconocerte a ti, querida
+    <a
+      href="https://www.colchasconcord.com.mx/blog/post/vive-la-experiencia-concord/"
+      >VIC</a
+    >. Por ser una mujer fuerte, independiente, aguerrida, empoderada, que día a
+    día lucha por salir adelante, por tener el valor de tomar la decisión que
+    cambió tu vida: ¡SER UNA MUJER EMPRENDEDORA! Gracias por decidir crecer de
+    la mano de <a href="https://www.colchasconcord.com.mx">Concord</a>.
+  </p>
+<img src="https://www.colchasconcord.com.mx/media/wysiwyg/wysiwyg/blog-dia-mujer.png" alt=""width="790" height="273"/>
+  <p>
+    Como sabrás, en todo el mundo una de cada tres mujeres ha sido víctima de
+    violencia física o sexual, principalmente por parte de un compañero
+    sentimental. Lamentablemente, el número de llamadas telefónicas a las líneas
+    de ayuda se ha multiplicado a raíz de la pandemia que actualmente vivimos
+    por
+    <a
+      href="https://www.colchasconcord.com.mx/juego-de-sabanas-suavitec-blanca-anticovid"
+      >SARS COVID-19</a
+    >, y esta ha sido de manera quíntuple.
+  </p>
+
+  <p>Los tres tipos de violencia más comunes son:</p>
+
+  <li>
+    Violencia psicológica: Puede manifestarse desde el hostigamiento, hasta la
+    manipulación, produciendo daños emocionales y psicológicos.
+  </li>
+
+  <li>
+    Violencia física: Se traduce en cualquier acción que provoca daño físico y
+    jamás debemos excusarla.
+  </li>
+
+  <li>
+    Violencia sexual: Es cualquier tipo de acoso, abuso o intimidación, sin
+    importar si se da dentro o fuera de cualquier relación.
+  </li>
+  <br />
+  <p>
+    En <a href="https://www.colchasconcord.com.mx">Concord</a>, hoy queremos
+    recordarte que ¡no estás sola, nosotros te apoyamos! Te invitamos a expresar
+    tu sororidad en todo momento, es por eso que hemos lanzado una línea de
+    productos como son
+    <a
+      href="https://www.colchasconcord.com.mx/protector-de-colchon-ozzy-calientito-lila"
+      >sábanas</a
+    >,
+    <a href="https://www.colchasconcord.com.mx/cobertor-borrega-artemisa"
+      >cobertores</a
+    >,
+    <a href="https://www.colchasconcord.com.mx/edredon-lavable-con-fundas-tiare"
+      >edredones</a
+    >
+    y mucho más, con el color morado que te representa.
+  </p>
+
+  <p>
+    Recuerda que lo más importante es dar el primer paso. Comparte y ayuda a esa
+    mujer que necesita alzar la voz, nos vemos en el siguiente blog.
+  </p>
+
+  <p>
+    Línea para mujeres en situación de violencia: 800 108 4053 (abierta las 24
+    horas, los 365 días del año).
+  </p>
+</div>
+
+<b>Por: Abril Díaz Gálvez.</b>
+</div>
+                    <a class="readmore" href="https://www.colchasconcord.com.mx/blog/post/no-estas-sola/">Ver más ></a>
+                </div>
+            </div>
+        </div>
+                <div class="item">
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="post-image">
+                                            <img src="https://www.colchasconcord.com.mx/media/magefan_blog/blog-miniatura.jpg" alt=""/>
+                                        </div>
+                </div>
+                <div class="col-sm-7">
+                    <div class="post-date">
+                        <span class="day">21</span>
+                        <span class="month">Sep</span>
+                    </div>
+                    <div class="postTitle">
+                        <h2><a href="https://www.colchasconcord.com.mx/blog/post/inspirate-y-decora-tu-habitacion/" >Inspírate y decora tu habitación</a></h2>
+                    </div>
+                                        <div class="postContent"><title>Inspírate y decora tu habitación</title>
+
+<style type="text/css" xml="space">
+<!--.concord {
+	text-align: justify;
+}
+--></style>
+
+    <p>¡Bienvenida una vez más a nuestro blog!</p>
+
+    <p> Nuestra habitación es el lugar más personal de la casa, por ello debemos pensar bien en la decoración que queremos darle, tomando en cuenta que lo más importante es sentirnos cómodas y tranquilas en ella.
+        <br>Esta temporada Concord tiene para ti más de 15 modelos nuevos, cada uno con colores, texturas y diseños que serán tendencia. ¡Te encantarán! </p>
+
+
+    <p>Además…</p>
+
+
+    <li>Son ligeros </li>
+    <li>Son ligeros</li>
+    <li>Ocupan poco espacio en tu clóset</li>
+    <li>Resistentes y fáciles de lavar</li>
+    <li>La textura de los <a href="https://www.colchasconcord.com.mx/catalogsearch/result/?q=Cobertores">cobertores</a> proporciona máxima suavidad</li>
+    <li>Sus colores son de máxima durabilidad</li>
+    <li>Confeccionados con la más alta calidad ¡No se deforman ni se hacen bolas!</li>
+    <li>Disponibles en diferentes medidas para adaptarse a tus necesidades</li>
+    <li>Calidad e innovación a un súper precio</li>
+
+
+    <h1>¡Complementa con <a href="https://www.colchasconcord.com.mx/catalogsearch/result/?q=Cortinas">cortinas</a> y <a href="https://www.colchasconcord.com.mx/catalogsearch/result/?q=Cojines">cojines</a> para llenar de estilo tu espacio!</h1></div>
+                    <a class="readmore" href="https://www.colchasconcord.com.mx/blog/post/inspirate-y-decora-tu-habitacion/">Ver más ></a>
+                </div>
+            </div>
+        </div>
+                <div class="item">
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="post-image">
+                                            <img src="https://www.colchasconcord.com.mx/media/magefan_blog/BlogC.jpeg" alt=""/>
+                                        </div>
+                </div>
+                <div class="col-sm-7">
+                    <div class="post-date">
+                        <span class="day">20</span>
+                        <span class="month">Jul</span>
+                    </div>
+                    <div class="postTitle">
+                        <h2><a href="https://www.colchasconcord.com.mx/blog/post/lava-tus-productos-concord/" >Lava tus productos Concord y cuida el planeta</a></h2>
+                    </div>
+                                        <div class="postContent"><title>Colchas Concord</title>
+
+<style type="text/css" xml="space"><!--.concord {
+	text-align: justify;
+}
+--></style>
+<p style="font-size: 16px;"><b>¡Hola a todas!</b></p>
+<p style="font-size: 14px;">Les damos la bienvenida una vez más a nuestro blog.</p>
+<p></div>
+                    <a class="readmore" href="https://www.colchasconcord.com.mx/blog/post/lava-tus-productos-concord/">Ver más ></a>
+                </div>
+            </div>
+        </div>
+                <div class="item">
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="post-image">
+                                            <img src="https://www.colchasconcord.com.mx/media/magefan_blog/t.jpeg" alt=""/>
+                                        </div>
+                </div>
+                <div class="col-sm-7">
+                    <div class="post-date">
+                        <span class="day">1</span>
+                        <span class="month">Jun</span>
+                    </div>
+                    <div class="postTitle">
+                        <h2><a href="https://www.colchasconcord.com.mx/blog/post/cuida-tus-blancos/" >Cómo cuidar tu ropa de cama</a></h2>
+                    </div>
+                                        <div class="postContent"><title>Colchas Concord</title>
+
+<style type="text/css" xml="space"><!--.concord {
+	text-align: justify;
+}
+--></style>
+<p style="font-size: 12px;">Cómo cuidar tu ropa de cama</p>
+<p></div>
+                    <a class="readmore" href="https://www.colchasconcord.com.mx/blog/post/cuida-tus-blancos/">Ver más ></a>
+                </div>
+            </div>
+        </div>
+                <div class="item">
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="post-image">
+                                            <img src="https://www.colchasconcord.com.mx/media/magefan_blog/WhatsApp_Image_2021-03-04_at_09.24.06_2_.jpeg" alt=""/>
+                                        </div>
+                </div>
+                <div class="col-sm-7">
+                    <div class="post-date">
+                        <span class="day">4</span>
+                        <span class="month">Mar</span>
+                    </div>
+                    <div class="postTitle">
+                        <h2><a href="https://www.colchasconcord.com.mx/blog/post/como-sanitizar-tu-ropa-de-cama/" >Cómo sanitizar tu ropa de cama.</a></h2>
+                    </div>
+                                        <div class="postContent"><title>Colchas Concord</title>
+
+<style type="text/css" xml="space">Blog<!--.concord {
+	text-align: justify;
+}
+--></style>
+<p style="font-size: 12px;"><p>¡Excelente día!</p> 
+<p>Hoy te brindaré algunos tips para mantener tu ropa de cama limpia, sanitizada y en perfectas condiciones.</p></p>
+<p></div>
+                    <a class="readmore" href="https://www.colchasconcord.com.mx/blog/post/como-sanitizar-tu-ropa-de-cama/">Ver más ></a>
+                </div>
+            </div>
+        </div>
+        </div>
+</div>
+<script type="text/javascript" xml="space">//
+        require([
+            'jquery',
+            'owl.carousel/owl.carousel.min'
+        ], function ($) {
+            $("#latest_news .owl-carousel").owlCarousel({
+                loop: true,
+                margin: 10,
+                  autoplay: true,
+                    autoplayTimeout: 7000,
+                nav: true,
+                animateIn: 'fadeIn',
+                animateOut: 'fadeOut',
+                navText: ["<em class='porto-icon-left-open-huge'></em>","<em class='porto-icon-right-open-huge'></em>"],
+                dots: false,
+                responsive: {
+                    0: {
+                        items:1
+                    },
+                    640: {
+                        items:2
+                    },
+                    768: {
+                        items:2
+                    },
+                    992: {
+                        items:2
+                    },
+                    1200: {
+                        items:2
+                    }
+                }
+            });
+        });
+// </script>
+</div></div></div></main><footer class="page-footer"><div class="footer">
+    <div class="footer-middle">
+        <div class="container">
+                   
+            <div class="row">
+            <div ><div class="block footer-column" style="padding-right: 11px;">
+<div class="block-title"><strong class="bold">Informaci&oacute;n corporativa</strong></div>
+<div class="block-content">
+<ul class="links">
+<li><a href="https://www.colchasconcord.com.mx/nuestra-cultura-organizacional">Nuestra Cultura Organizacional</a></li>
+</ul>
+</div>
+<div style="display: block; margin-top: 10px; text-align: center;">
+<!--<div style="text-align: center;"><img src="https://www.colchasconcord.com.mx/media/wysiwyg/qbo/logos_nuevos.png" alt="AMVO" /> </div>-->
+<div style="text-align: center;"><img src="https://www.colchasconcord.com.mx/media/wysiwyg/qbo/logo_iso.png" alt="" /> </div>
+<div style="text-align: center;"><img src="https://www.colchasconcord.com.mx/media/wysiwyg/qbo/afiliado_logo.png" alt="" /> </div>
+
+</div>
+</div>
+
+
+<style>
+.redirectModal .modal-header button { display: block !important;}
+.redirectModal .modal-footer  { display: none;}
+.redirectModal .modal-inner-wrap .modal-content {overflow: visible;}
+.redirectModal.modal-popup._inner-scroll .modal-inner-wrap { max-width: 900px; }
+@media (min-width: 769px) {
+  .redirectModal .image-bg-dsk {
+      display: block;
+      object-fit: contain;
+      width: 100%;
+  }
+  .redirectModal .image-bg-mob {
+      display: none;
+  }
+}
+@media (max-width: 768px) {
+  .redirectModal .image-bg-mob {
+      display: block;
+      object-fit: contain;
+      width: 100%;
+      max-height: 90vh;
+  }
+  .redirectModal .image-bg-dsk {
+      display: none;
+  }
+}
+</style>
+  <script>
+      require(['jquery', 'Magento_Ui/js/modal/modal'], function ($, modal) {
+          function createCookie () {
+              var d = new Date();
+              d.setTime(d.getTime() + (12*60*60*1000));
+              var expires = "expires="+ d.toUTCString();
+              document.cookie = 'modal-redirect=activo;' + expires + ';'
+          }
+          function showModal () {
+              var options = {
+                  type: 'popup',
+                  responsive: true,
+                  innerScroll: true,
+                  modalClass: 'redirectModal'
+              };
+              var mod = $("#redirectModal").modal(options);
+              mod.modal('openModal');
+          }
+          $(document).ready(function () {
+              var str = document.cookie
+              console.log('modal-status: check if exist')
+              if(str !== '' && str.includes("modal-redirect")) {
+                  var cookieExist = document.cookie.split('; ').find(row => row.startsWith('modal-redirect')).split('=')[1];
+                  if (cookieExist === 'activo' || typeof cookieExist !== 'undefined') {
+                      console.log('modal-status: ' + cookieExist)
+                  } else {
+                      console.log('modal-status: create')
+                      createCookie()
+                      showModal()
+                  }
+              } else {
+                  console.log('modal-status: create')
+                  createCookie()
+                  showModal()
+              }
+          });
+      });
+  </script>
+
+</div><div ><div class="block footer-column">
+    <div class="block-title"><strong ">Información de vendedora </strong></div>
+    <div class="block-content">
+        <ul class="links">
+            <li><a href="https://www.colchasconcord.com.mx/customer/account/login/" title="Iniciar-sesión">Iniciar sesión</a></li>
+            <li><a href="https://www.colchasconcord.com.mx/ayuda" title="Preguntas-frecuentes">Preguntas frecuentes</a></li>     
+            <li><a href="https://www.colchasconcord.com.mx/usos-y-cuidados" title="Usos y cuidados">Usos y cuidados</a></li>
+          <li><a href="https://www.colchasconcord.com.mx/vendora-independiente-concord" title="Vendedora independiente">Vendedora independiente</a></li>
+ 
+        </ul>
+    </div>
+</div>
+<div class="block footer-column-3">
+    <div class="block-title"><strong ">Información legal y políticas</strong></div>
+    <div class="block-content">
+        <ul class="links">
+            <li><a href="https://www.colchasconcord.com.mx/politica-privacidad#privacy-policy-title-6" title="Términos y condiciones">Términos y condiciones</a></li>
+            <li><a href="https://www.colchasconcord.com.mx/politica-privacidad" title="Privacidad">Política de privacidad</a></li>
+            <li><a href="https://www.colchasconcord.com.mx/politicas-de-venta" title="Politicas de venta">Políticas de venta </a>
+            <li><a href="https://www.colchasconcord.com.mx/politica-de-facturacion" title="Politica de facturación">Política de facturación</a>
+           <li><a href="https://www.colchasconcord.com.mx/politica-pagos-envios" title="política de pagos y envíos">Política de pagos y envíos</a></li>
+            <li><a href="https://www.colchasconcord.com.mx/politica-devoluciones" title="Devoluciones">Política de devoluciones y cambios</a></li>
+         </li>
+</ul>
+    </div>
+</div></div><div ><div class="block footer-column">
+    <div class="block-title"><strong>Contacto en Línea</strong></div>
+    <div class="block-content">
+        <ul class="contact-info">
+            <li class="contact"><em class="porto-icon-location"></em><p><b><a href="https://www.colchasconcord.com.mx/contact">Contáctanos</b><br/> </p></li>
+            <li class="phone"><em class="porto-icon-phone"></em><p><b>Teléfono:</b><br/><a href="tel:+52015558707011">55-5870-7011 Op.3</a><br/>
+            <li class="locations"><em class="porto-icon-mail"></em><p><b><a href="https://www.colchasconcord.com.mx/storelocator/">Ubica tu sucursal</a></b></p></li>
+<li class="franquicia" style="position: relative;">
+	
+
+    </div>
+</div>
+
+
+<a href="https://wa.me/5215525591604?text=Quiero%20contactar%20a%20un%20ejecutivo" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+
+<style>
+
+.whatsapp-icon {
+    margin: 5px 4px 4px 5px;
+    font: normal normal normal 35px/1 FontAwesome;
+    font-size: 4.5rem;
+}
+
+.whatsapp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    bottom: 15px;
+    left: 30px;
+    background-color: #25d366;
+    color: #FFF !important;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+}
+</style>
+
+</div><div ><div class="block newsletter">
+    <div class="block-title"><strong>Suscríbete al boletín de noticias</strong></div>
+    <div class="content">
+        <p>Suscríbete a nuestro boletín de noticias <br>
+recibe en tu correo nuestras novedades.</p>
+        <label for="footer_newsletter">Ingresa tu dirección de Email</label>
+        <form class="form subscribe"
+            novalidate
+            action="https://www.colchasconcord.com.mx/newsletter/subscriber/new/"
+            method="post"
+            data-mage-init='{"validation": {"errorClass": "mage-error"}}'
+            id="newsletter-validate-detail">
+            <div class="field newsletter">
+                <label class="label" for="footer_newsletter"><span>Inscríbase a nuestro boletín de noticias:</span></label>
+                <div class="control">
+                    <input name="email" type="email" id="footer_newsletter"
+                                data-validate="{required:true, 'validate-email':true}"/>
+                </div>
+            </div>
+            <div class="actions">
+                <button class="action subscribe primary" title="Suscribirse" type="submit">
+                    <span>Enviar</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+</div>            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+                                        <strong class="logo">
+                            <img src="https://www.colchasconcord.com.mx/media/porto/footer_logo/default/logo-concord_2_1.png" alt=""/>
+                            </strong>
+                        <div class="custom-block"><ul class="social-icons">
+   <li><a class="facebook-link" target="_blank" href="https://www.facebook.com/ColchasConcordOficial/"><em class="porto-icon-facebook"></em></a></li>
+   <li><a class="instagram-link" target="_blank" href="https://www.instagram.com/colchasconcordoficialmx/"><em class="porto-icon-instagram"></em></a></li>
+   <li><a class="twitter-link" target="_blank" href="https://twitter.com/OficialConcord/"><em class="porto-icon-twitter"></em></a></li>
+  <li><a class="pinterest-link" target="_blank" href="https://es.pinterest.com/colchasconcord/"><em class="porto-icon-pinterest"></em></a></li>
+</ul>
+<div class="metodos"> <img class="pago" src="https://www.colchasconcord.com.mx/media/wysiwyg/qbo/metodos_2_1.png" alt="" /></div>
+<div class="copy"><p>Colchas de México S.A. de C.V.</p></div>
+<div class="qbo"><a style="color: #777" target="_blank"  href="https://www.qbo.tech/" title="Qbo Digital Solutions"><p class="logo-qbo">Hecho por</p></a></div>
+</div>                        <address></address>
+                    </div>
+    </div>
+</div>
+<a href="javascript:void(0)" id="totop"><em class="porto-icon-up-open"></em></a></footer><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNZC6FQ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --> 	<div data-mage-init='{"validateWishlist":{}}'></div>
+<script>
+    requirejs(['jquery', 'weltpixel_quickview' ],
+        function   ($, quickview) {
+            $(document).ready(function() {
+                $('body').on('click','.weltpixel-quickview', function() {
+                    var prodUrl = $(this).attr('data-quickview-url');
+                    if (prodUrl.length) {
+                        quickview.displayContent(prodUrl);
+                    }
+                });
+            });
+        });
+
+    window.weltpixel_quickview = {"baseUrl":"https:\/\/www.colchasconcord.com.mx\/","closeSeconds":"5","showMiniCart":"1","showShoppingCheckoutButtons":"1"};
+</script><!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.agent='dvapptrian';n.queue=[];
+t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '522549179312486');
+
+fbq('track', 'PageView');
+
+</script>
+<noscript><img height="1" width="1" style="display:none" alt="Facebook Pixel" 
+src="https://www.facebook.com/tr?id=522549179312486&ev=PageView&noscript=1"
+/></noscript>
+
+<script>
+require([
+    'jquery'
+], function ($) {
+    $(function () {
+
+
+
+    });
+});
+</script>
+<!-- End Facebook Pixel Code -->
+</div>    </body>
+</html>
+
